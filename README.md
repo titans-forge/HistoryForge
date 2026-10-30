@@ -4,6 +4,18 @@ An evidence-bound historical connection explorer, rendered as a living celestial
 
 **[Open the public edition](https://titans-forge.github.io/HistoryForge/)**
 
+## The Living Tapestry
+
+Explore the collection as an interactive 3D network, with its entities alongside it:
+
+[![Living Tapestry 3D overview with the entity sidebar open](public/screenshots/tapestry-overview.png)](https://titans-forge.github.io/HistoryForge/)
+
+Focus on a connection to see its historical claim, date and source evidence:
+
+![Focused 3D connection between Benjamin Franklin and the United States Constitution, with the evidence sidebar open](public/screenshots/tapestry-evidence.png)
+
+These screenshots show the actual public pilot, not the larger private research corpus. Nodes and connecting lines represent recorded source-bound relationships; the spatial arrangement is illustrative.
+
 ## Public Pilot
 
 This release is deliberately smaller than the private History Forge research workspace:

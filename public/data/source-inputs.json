@@ -1,0 +1,513 @@
+{
+  "schema": "history-forge-public-inputs-v1",
+  "extraction": "Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+  "captured_at": "2026-10-30T20:21:57.246248+00:00",
+  "capture_manifest": [
+    {
+      "file": "declaration.raw",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "sha256": "232cda5837e186c89917ea9dabcef1d8530e085dfbebf6590c940192d49fdb95",
+      "bytes": 48690
+    },
+    {
+      "file": "constitution.raw",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "sha256": "aff2cd6b44123d5d18394c16eb29a3e29f55c82feea91e8e2ab42f85e3cebd06",
+      "bytes": 70555
+    },
+    {
+      "file": "rights.raw",
+      "url": "https://www.archives.gov/global-pages/privacy.html",
+      "sha256": "8d322fac13e62e587e631b5c25a0bb04620e140cb4dd8489e3601c2bed9b2343",
+      "bytes": 57095
+    },
+    {
+      "file": "apache.raw",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "file": "pennsylvania.raw",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-pennsylvania",
+      "sha256": "e8728b85f6519d55998e51d0c218476596dc34f12d53c1fcf4bb05a3488b71b5",
+      "bytes": 70821
+    },
+    {
+      "file": "connecticut.raw",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-connecticut",
+      "sha256": "b1cb795cb2a5d0caab73f254efa7a3386e08f9bce073bb388098e2a9635a9d74",
+      "bytes": 47197
+    },
+    {
+      "file": "delaware.raw",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-delaware",
+      "sha256": "13328e8fb1e0784ee586c5ed2ff4f6080a517a6923f4c8d5db94c1962c0f4d88",
+      "bytes": 53765
+    }
+  ],
+  "declaration": [
+    {
+      "heading": "Georgia",
+      "names": [
+        "Button Gwinnett",
+        "Lyman Hall",
+        "George Walton"
+      ],
+      "lines": [
+        "Georgia",
+        "Button Gwinnett",
+        "Lyman Hall",
+        "George Walton"
+      ]
+    },
+    {
+      "heading": "North Carolina",
+      "names": [
+        "William Hooper",
+        "Joseph Hewes",
+        "John Penn"
+      ],
+      "lines": [
+        "North Carolina",
+        "William Hooper",
+        "Joseph Hewes",
+        "John Penn"
+      ]
+    },
+    {
+      "heading": "South Carolina",
+      "names": [
+        "Edward Rutledge",
+        "Thomas Heyward, Jr.",
+        "Thomas Lynch, Jr.",
+        "Arthur Middleton"
+      ],
+      "lines": [
+        "South Carolina",
+        "Edward Rutledge",
+        "Thomas Heyward, Jr.",
+        "Thomas Lynch, Jr.",
+        "Arthur Middleton"
+      ]
+    },
+    {
+      "heading": "Massachusetts",
+      "names": [
+        "John Hancock"
+      ],
+      "lines": [
+        "Massachusetts",
+        "John Hancock"
+      ]
+    },
+    {
+      "heading": "Maryland",
+      "names": [
+        "Samuel Chase",
+        "William Paca",
+        "Thomas Stone",
+        "Charles Carroll of Carrollton"
+      ],
+      "lines": [
+        "Maryland",
+        "Samuel Chase",
+        "William Paca",
+        "Thomas Stone",
+        "Charles Carroll of Carrollton"
+      ]
+    },
+    {
+      "heading": "Virginia",
+      "names": [
+        "George Wythe",
+        "Richard Henry Lee",
+        "Thomas Jefferson",
+        "Benjamin Harrison",
+        "Thomas Nelson, Jr.",
+        "Francis Lightfoot Lee",
+        "Carter Braxton"
+      ],
+      "lines": [
+        "Virginia",
+        "George Wythe",
+        "Richard Henry Lee",
+        "Thomas Jefferson",
+        "Benjamin Harrison",
+        "Thomas Nelson, Jr.",
+        "Francis Lightfoot Lee",
+        "Carter Braxton"
+      ]
+    },
+    {
+      "heading": "Pennsylvania",
+      "names": [
+        "Robert Morris",
+        "Benjamin Rush",
+        "Benjamin Franklin",
+        "John Morton",
+        "George Clymer",
+        "James Smith",
+        "George Taylor",
+        "James Wilson",
+        "George Ross"
+      ],
+      "lines": [
+        "Pennsylvania",
+        "Robert Morris",
+        "Benjamin Rush",
+        "Benjamin Franklin",
+        "John Morton",
+        "George Clymer",
+        "James Smith",
+        "George Taylor",
+        "James Wilson",
+        "George Ross"
+      ]
+    },
+    {
+      "heading": "Delaware",
+      "names": [
+        "Caesar Rodney",
+        "George Read",
+        "Thomas McKean"
+      ],
+      "lines": [
+        "Delaware",
+        "Caesar Rodney",
+        "George Read",
+        "Thomas McKean"
+      ]
+    },
+    {
+      "heading": "New York",
+      "names": [
+        "William Floyd",
+        "Philip Livingston",
+        "Francis Lewis",
+        "Lewis Morris"
+      ],
+      "lines": [
+        "New York",
+        "William Floyd",
+        "Philip Livingston",
+        "Francis Lewis",
+        "Lewis Morris"
+      ]
+    },
+    {
+      "heading": "New Jersey",
+      "names": [
+        "Richard Stockton",
+        "John Witherspoon",
+        "Francis Hopkinson",
+        "John Hart",
+        "Abraham Clark"
+      ],
+      "lines": [
+        "New Jersey",
+        "Richard Stockton",
+        "John Witherspoon",
+        "Francis Hopkinson",
+        "John Hart",
+        "Abraham Clark"
+      ]
+    },
+    {
+      "heading": "New Hampshire",
+      "names": [
+        "Josiah Bartlett",
+        "William Whipple"
+      ],
+      "lines": [
+        "New Hampshire",
+        "Josiah Bartlett",
+        "William Whipple"
+      ]
+    },
+    {
+      "heading": "Massachusetts",
+      "names": [
+        "Samuel Adams",
+        "John Adams",
+        "Robert Treat Paine",
+        "Elbridge Gerry"
+      ],
+      "lines": [
+        "Massachusetts",
+        "Samuel Adams",
+        "John Adams",
+        "Robert Treat Paine",
+        "Elbridge Gerry"
+      ]
+    },
+    {
+      "heading": "Rhode Island",
+      "names": [
+        "Stephen Hopkins",
+        "William Ellery"
+      ],
+      "lines": [
+        "Rhode Island",
+        "Stephen Hopkins",
+        "William Ellery"
+      ]
+    },
+    {
+      "heading": "Connecticut",
+      "names": [
+        "Roger Sherman",
+        "Samuel Huntington",
+        "William Williams",
+        "Oliver Wolcott"
+      ],
+      "lines": [
+        "Connecticut",
+        "Roger Sherman",
+        "Samuel Huntington",
+        "William Williams",
+        "Oliver Wolcott"
+      ]
+    },
+    {
+      "heading": "New Hampshire",
+      "names": [
+        "Matthew Thornton"
+      ],
+      "lines": [
+        "New Hampshire",
+        "Matthew Thornton"
+      ]
+    }
+  ],
+  "constitution": [
+    {
+      "heading": "Virginia",
+      "names": [
+        "G\u00b0. Washington"
+      ],
+      "lines": [
+        "G\u00b0. Washington",
+        "Presidt and deputy from Virginia"
+      ]
+    },
+    {
+      "heading": "Delaware",
+      "names": [
+        "Geo: Read",
+        "Gunning Bedford jun",
+        "John Dickinson",
+        "Richard Bassett",
+        "Jaco: Broom"
+      ],
+      "lines": [
+        "Delaware",
+        "Geo: Read",
+        "Gunning Bedford jun",
+        "John Dickinson",
+        "Richard Bassett",
+        "Jaco: Broom"
+      ]
+    },
+    {
+      "heading": "Maryland",
+      "names": [
+        "James McHenry",
+        "Dan of St Thos. Jenifer",
+        "Danl. Carroll"
+      ],
+      "lines": [
+        "Maryland",
+        "James McHenry",
+        "Dan of St Thos. Jenifer",
+        "Danl. Carroll"
+      ]
+    },
+    {
+      "heading": "Virginia",
+      "names": [
+        "John Blair",
+        "James Madison Jr."
+      ],
+      "lines": [
+        "Virginia",
+        "John Blair",
+        "James Madison Jr."
+      ]
+    },
+    {
+      "heading": "North Carolina",
+      "names": [
+        "Wm. Blount",
+        "Richd. Dobbs Spaight",
+        "Hu Williamson"
+      ],
+      "lines": [
+        "North Carolina",
+        "Wm. Blount",
+        "Richd. Dobbs Spaight",
+        "Hu Williamson"
+      ]
+    },
+    {
+      "heading": "South Carolina",
+      "names": [
+        "J. Rutledge",
+        "Charles Cotesworth Pinckney",
+        "Charles Pinckney",
+        "Pierce Butler"
+      ],
+      "lines": [
+        "South Carolina",
+        "J. Rutledge",
+        "Charles Cotesworth Pinckney",
+        "Charles Pinckney",
+        "Pierce Butler"
+      ]
+    },
+    {
+      "heading": "Georgia",
+      "names": [
+        "William Few",
+        "Abr Baldwin"
+      ],
+      "lines": [
+        "Georgia",
+        "William Few",
+        "Abr Baldwin"
+      ]
+    },
+    {
+      "heading": "New Hampshire",
+      "names": [
+        "John Langdon",
+        "Nicholas Gilman"
+      ],
+      "lines": [
+        "New Hampshire",
+        "John Langdon",
+        "Nicholas Gilman"
+      ]
+    },
+    {
+      "heading": "Massachusetts",
+      "names": [
+        "Nathaniel Gorham",
+        "Rufus King"
+      ],
+      "lines": [
+        "Massachusetts",
+        "Nathaniel Gorham",
+        "Rufus King"
+      ]
+    },
+    {
+      "heading": "Connecticut",
+      "names": [
+        "Wm. Saml. Johnson",
+        "Roger Sherman"
+      ],
+      "lines": [
+        "Connecticut",
+        "Wm. Saml. Johnson",
+        "Roger Sherman"
+      ]
+    },
+    {
+      "heading": "New York",
+      "names": [
+        "Alexander Hamilton"
+      ],
+      "lines": [
+        "New York",
+        "Alexander Hamilton"
+      ]
+    },
+    {
+      "heading": "New Jersey",
+      "names": [
+        "Wil: Livingston",
+        "David Brearley",
+        "Wm. Paterson",
+        "Jona: Dayton"
+      ],
+      "lines": [
+        "New Jersey",
+        "Wil: Livingston",
+        "David Brearley",
+        "Wm. Paterson",
+        "Jona: Dayton"
+      ]
+    },
+    {
+      "heading": "Pennsylvania",
+      "names": [
+        "B Franklin",
+        "Thomas Mifflin",
+        "Robt. Morris",
+        "Geo. Clymer",
+        "Thos. FitzSimons",
+        "Jared Ingersoll",
+        "James Wilson",
+        "Gouv Morris"
+      ],
+      "lines": [
+        "Pennsylvania",
+        "B Franklin",
+        "Thomas Mifflin",
+        "Robt. Morris",
+        "Geo. Clymer",
+        "Thos. FitzSimons",
+        "Jared Ingersoll",
+        "James Wilson",
+        "Gouv Morris"
+      ]
+    }
+  ],
+  "identity_mappings": [
+    {
+      "signature": "B Franklin",
+      "label": "Benjamin Franklin",
+      "heading": "Benjamin Franklin, Pennsylvania",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-pennsylvania#franklin",
+      "capture_sha256": "e8728b85f6519d55998e51d0c218476596dc34f12d53c1fcf4bb05a3488b71b5"
+    },
+    {
+      "signature": "Robt. Morris",
+      "label": "Robert Morris",
+      "heading": "Robert Morris, Pennsylvania",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-pennsylvania#rmorris",
+      "transcription_href": "https://www.archives.gov/founding-docs/founding-fathers-pennsylvania#morris",
+      "locator_note": "The frozen Constitution transcription links to #morris, which is absent from the frozen biography page. The resolved locator #rmorris belongs to its Robert Morris heading. The original upstream href is retained; this correction is editorial, not a change to the historical signature.",
+      "capture_sha256": "e8728b85f6519d55998e51d0c218476596dc34f12d53c1fcf4bb05a3488b71b5"
+    },
+    {
+      "signature": "Geo. Clymer",
+      "label": "George Clymer",
+      "heading": "George Clymer, Pennsylvania",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-pennsylvania#clymer",
+      "capture_sha256": "e8728b85f6519d55998e51d0c218476596dc34f12d53c1fcf4bb05a3488b71b5"
+    },
+    {
+      "signature": "James Wilson",
+      "label": "James Wilson",
+      "heading": "James Wilson, Pennsylvania",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-pennsylvania#wilson",
+      "capture_sha256": "e8728b85f6519d55998e51d0c218476596dc34f12d53c1fcf4bb05a3488b71b5"
+    },
+    {
+      "signature": "Geo: Read",
+      "label": "George Read",
+      "heading": "George Read, Delaware",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-delaware#read",
+      "capture_sha256": "13328e8fb1e0784ee586c5ed2ff4f6080a517a6923f4c8d5db94c1962c0f4d88"
+    },
+    {
+      "signature": "Roger Sherman",
+      "label": "Roger Sherman",
+      "heading": "Roger Sherman, Connecticut",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-connecticut#sherman",
+      "capture_sha256": "b1cb795cb2a5d0caab73f254efa7a3386e08f9bce073bb388098e2a9635a9d74"
+    }
+  ]
+}

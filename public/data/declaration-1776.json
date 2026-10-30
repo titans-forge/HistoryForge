@@ -1,0 +1,1186 @@
+{
+  "dossier": {
+    "id": "declaration-1776",
+    "title": "Declaration of Independence",
+    "period": "1776",
+    "region": "americas"
+  },
+  "sources": [
+    {
+      "id": "declaration",
+      "title": "Declaration of Independence",
+      "author": "Continental Congress",
+      "kind": "primary document / modern institutional transcription",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "edition": "National Archives transcription of the Stone engraving of the parchment Declaration.",
+      "provenance_credit": "National Archives transcription of the Stone engraving of the parchment Declaration.",
+      "perspective": "A formal subscription list. Presence in a list does not establish co-authorship, interpersonal contact, unanimity of personal opinion, or completeness of political participation.",
+      "dependence": "Both the transcription and linked identity biographies are from NARA; not independent historical witnesses.",
+      "rights": "Historical signature text only; no images or modern essays reproduced. See THIRD_PARTY_NOTICES.md."
+    }
+  ],
+  "passages": [
+    {
+      "id": "declaration-1776-signatures-1",
+      "source_id": "declaration",
+      "text": "Georgia\nButton Gwinnett\nLyman Hall\nGeorge Walton",
+      "text_sha256": "3a56251d15808adc0663bf02de1dd5f9ff3080798ae27ccada04b662547ecee1",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (Georgia), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-2",
+      "source_id": "declaration",
+      "text": "North Carolina\nWilliam Hooper\nJoseph Hewes\nJohn Penn",
+      "text_sha256": "949bb3a28f6fe9caaa1e73de4b6dab9229c7889a930d3248b1392d3856aa15fb",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (North Carolina), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-3",
+      "source_id": "declaration",
+      "text": "South Carolina\nEdward Rutledge\nThomas Heyward, Jr.\nThomas Lynch, Jr.\nArthur Middleton",
+      "text_sha256": "604a44ada56875a5dc54c440468567d221f1b899d8b7b7f168741d3fac1c54a7",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (South Carolina), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-4",
+      "source_id": "declaration",
+      "text": "Massachusetts\nJohn Hancock",
+      "text_sha256": "ae178d6b61b2ca14d3b06213622f149129e3595aaed0139d4b1f64564588dc7c",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (Massachusetts), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-5",
+      "source_id": "declaration",
+      "text": "Maryland\nSamuel Chase\nWilliam Paca\nThomas Stone\nCharles Carroll of Carrollton",
+      "text_sha256": "5e837937d9f1e6c63618ae68a111a83859d9e4d1d50541d89a6019e9c83f1aa4",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (Maryland), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-6",
+      "source_id": "declaration",
+      "text": "Virginia\nGeorge Wythe\nRichard Henry Lee\nThomas Jefferson\nBenjamin Harrison\nThomas Nelson, Jr.\nFrancis Lightfoot Lee\nCarter Braxton",
+      "text_sha256": "ef48c4dfbd79dde6c750411aced70d941b9a8a77cd7719cc6b8d4b99f1d5147a",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (Virginia), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-7",
+      "source_id": "declaration",
+      "text": "Pennsylvania\nRobert Morris\nBenjamin Rush\nBenjamin Franklin\nJohn Morton\nGeorge Clymer\nJames Smith\nGeorge Taylor\nJames Wilson\nGeorge Ross",
+      "text_sha256": "9379e7567150cf966efd394a816eb64f50227ad80fd4ca9a8c4526ad47b6e068",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (Pennsylvania), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-8",
+      "source_id": "declaration",
+      "text": "Delaware\nCaesar Rodney\nGeorge Read\nThomas McKean",
+      "text_sha256": "9a23ee507898d22632e4042f461a6a9a120f1b73432ba5a286534755d6e17989",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (Delaware), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-9",
+      "source_id": "declaration",
+      "text": "New York\nWilliam Floyd\nPhilip Livingston\nFrancis Lewis\nLewis Morris",
+      "text_sha256": "580353a218a47e4f5f3e1fdb1bb1b0aa51281f86f54ca8686f53c08b06abb75b",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (New York), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-10",
+      "source_id": "declaration",
+      "text": "New Jersey\nRichard Stockton\nJohn Witherspoon\nFrancis Hopkinson\nJohn Hart\nAbraham Clark",
+      "text_sha256": "721ffe87f6d86bd6be43b80f08ddc52620fef3aff407eed971d95ac78b18cb3d",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (New Jersey), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-11",
+      "source_id": "declaration",
+      "text": "New Hampshire\nJosiah Bartlett\nWilliam Whipple",
+      "text_sha256": "dd15fb5bae3a04fda6bef864eeb689b32aea01ab858ba8ca7bb59612ee8e7857",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (New Hampshire), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-12",
+      "source_id": "declaration",
+      "text": "Massachusetts\nSamuel Adams\nJohn Adams\nRobert Treat Paine\nElbridge Gerry",
+      "text_sha256": "f5dc01e7dcef21473437f9390ede8fa2aafd56c31644baab6421a4b38e63927b",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (Massachusetts), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-13",
+      "source_id": "declaration",
+      "text": "Rhode Island\nStephen Hopkins\nWilliam Ellery",
+      "text_sha256": "200b71b5af75ff3222f884cac281d8e217c05c6ac49ff1de3a3ca16ac6007037",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (Rhode Island), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-14",
+      "source_id": "declaration",
+      "text": "Connecticut\nRoger Sherman\nSamuel Huntington\nWilliam Williams\nOliver Wolcott",
+      "text_sha256": "753611d26dafdad417b352a8ed5dce194b64a2fc2eec66325242c4cfecf9f710",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (Connecticut), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "declaration-1776-signatures-15",
+      "source_id": "declaration",
+      "text": "New Hampshire\nMatthew Thornton",
+      "text_sha256": "2bf45df98db85fa5b99b5dff3a603db570cd8282722a906c27377626784fa4b3",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "citation": "Declaration of Independence, signature block (New Hampshire), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document adoption date, not an individual signing date. This edge records a listed signature only. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    }
+  ],
+  "claims": [
+    {
+      "id": "declaration-1776-button-gwinnett",
+      "subject": "person-declaration-1776-button-gwinnett",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Button Gwinnett is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-1"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Button Gwinnett",
+      "source_heading": "Georgia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-lyman-hall",
+      "subject": "person-declaration-1776-lyman-hall",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Lyman Hall is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-1"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Lyman Hall",
+      "source_heading": "Georgia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-george-walton",
+      "subject": "person-declaration-1776-george-walton",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "George Walton is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-1"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "George Walton",
+      "source_heading": "Georgia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-william-hooper",
+      "subject": "person-declaration-1776-william-hooper",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "William Hooper is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-2"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "William Hooper",
+      "source_heading": "North Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-joseph-hewes",
+      "subject": "person-declaration-1776-joseph-hewes",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Joseph Hewes is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-2"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Joseph Hewes",
+      "source_heading": "North Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-john-penn",
+      "subject": "person-declaration-1776-john-penn",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "John Penn is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-2"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "John Penn",
+      "source_heading": "North Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-edward-rutledge",
+      "subject": "person-declaration-1776-edward-rutledge",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Edward Rutledge is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-3"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Edward Rutledge",
+      "source_heading": "South Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-thomas-heyward-jr",
+      "subject": "person-declaration-1776-thomas-heyward-jr",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Thomas Heyward, Jr. is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-3"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Thomas Heyward, Jr.",
+      "source_heading": "South Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-thomas-lynch-jr",
+      "subject": "person-declaration-1776-thomas-lynch-jr",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Thomas Lynch, Jr. is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-3"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Thomas Lynch, Jr.",
+      "source_heading": "South Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-arthur-middleton",
+      "subject": "person-declaration-1776-arthur-middleton",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Arthur Middleton is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-3"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Arthur Middleton",
+      "source_heading": "South Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-john-hancock",
+      "subject": "person-declaration-1776-john-hancock",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "John Hancock is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-4"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "John Hancock",
+      "source_heading": "Massachusetts",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-samuel-chase",
+      "subject": "person-declaration-1776-samuel-chase",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Samuel Chase is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-5"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Samuel Chase",
+      "source_heading": "Maryland",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-william-paca",
+      "subject": "person-declaration-1776-william-paca",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "William Paca is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-5"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "William Paca",
+      "source_heading": "Maryland",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-thomas-stone",
+      "subject": "person-declaration-1776-thomas-stone",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Thomas Stone is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-5"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Thomas Stone",
+      "source_heading": "Maryland",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-charles-carroll-of-carrollton",
+      "subject": "person-declaration-1776-charles-carroll-of-carrollton",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Charles Carroll of Carrollton is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-5"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Charles Carroll of Carrollton",
+      "source_heading": "Maryland",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-george-wythe",
+      "subject": "person-declaration-1776-george-wythe",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "George Wythe is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-6"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "George Wythe",
+      "source_heading": "Virginia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-richard-henry-lee",
+      "subject": "person-declaration-1776-richard-henry-lee",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Richard Henry Lee is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-6"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Richard Henry Lee",
+      "source_heading": "Virginia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-thomas-jefferson",
+      "subject": "person-declaration-1776-thomas-jefferson",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Thomas Jefferson is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-6"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Thomas Jefferson",
+      "source_heading": "Virginia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-benjamin-harrison",
+      "subject": "person-declaration-1776-benjamin-harrison",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Benjamin Harrison is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-6"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Benjamin Harrison",
+      "source_heading": "Virginia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-thomas-nelson-jr",
+      "subject": "person-declaration-1776-thomas-nelson-jr",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Thomas Nelson, Jr. is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-6"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Thomas Nelson, Jr.",
+      "source_heading": "Virginia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-francis-lightfoot-lee",
+      "subject": "person-declaration-1776-francis-lightfoot-lee",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Francis Lightfoot Lee is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-6"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Francis Lightfoot Lee",
+      "source_heading": "Virginia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-carter-braxton",
+      "subject": "person-declaration-1776-carter-braxton",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Carter Braxton is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-6"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Carter Braxton",
+      "source_heading": "Virginia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-robert-morris",
+      "subject": "person-robert-morris",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Robert Morris is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-7"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Robert Morris",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-benjamin-rush",
+      "subject": "person-declaration-1776-benjamin-rush",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Benjamin Rush is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-7"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Benjamin Rush",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-benjamin-franklin",
+      "subject": "person-benjamin-franklin",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Benjamin Franklin is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-7"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Benjamin Franklin",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-john-morton",
+      "subject": "person-declaration-1776-john-morton",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "John Morton is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-7"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "John Morton",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-george-clymer",
+      "subject": "person-george-clymer",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "George Clymer is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-7"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "George Clymer",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-james-smith",
+      "subject": "person-declaration-1776-james-smith",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "James Smith is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-7"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "James Smith",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-george-taylor",
+      "subject": "person-declaration-1776-george-taylor",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "George Taylor is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-7"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "George Taylor",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-james-wilson",
+      "subject": "person-james-wilson",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "James Wilson is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-7"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "James Wilson",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-george-ross",
+      "subject": "person-declaration-1776-george-ross",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "George Ross is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-7"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "George Ross",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-caesar-rodney",
+      "subject": "person-declaration-1776-caesar-rodney",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Caesar Rodney is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-8"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Caesar Rodney",
+      "source_heading": "Delaware",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-george-read",
+      "subject": "person-george-read",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "George Read is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-8"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "George Read",
+      "source_heading": "Delaware",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-thomas-mckean",
+      "subject": "person-declaration-1776-thomas-mckean",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Thomas McKean is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-8"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Thomas McKean",
+      "source_heading": "Delaware",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-william-floyd",
+      "subject": "person-declaration-1776-william-floyd",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "William Floyd is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-9"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "William Floyd",
+      "source_heading": "New York",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-philip-livingston",
+      "subject": "person-declaration-1776-philip-livingston",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Philip Livingston is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-9"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Philip Livingston",
+      "source_heading": "New York",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-francis-lewis",
+      "subject": "person-declaration-1776-francis-lewis",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Francis Lewis is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-9"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Francis Lewis",
+      "source_heading": "New York",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-lewis-morris",
+      "subject": "person-declaration-1776-lewis-morris",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Lewis Morris is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-9"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Lewis Morris",
+      "source_heading": "New York",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-richard-stockton",
+      "subject": "person-declaration-1776-richard-stockton",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Richard Stockton is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-10"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Richard Stockton",
+      "source_heading": "New Jersey",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-john-witherspoon",
+      "subject": "person-declaration-1776-john-witherspoon",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "John Witherspoon is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-10"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "John Witherspoon",
+      "source_heading": "New Jersey",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-francis-hopkinson",
+      "subject": "person-declaration-1776-francis-hopkinson",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Francis Hopkinson is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-10"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Francis Hopkinson",
+      "source_heading": "New Jersey",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-john-hart",
+      "subject": "person-declaration-1776-john-hart",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "John Hart is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-10"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "John Hart",
+      "source_heading": "New Jersey",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-abraham-clark",
+      "subject": "person-declaration-1776-abraham-clark",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Abraham Clark is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-10"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Abraham Clark",
+      "source_heading": "New Jersey",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-josiah-bartlett",
+      "subject": "person-declaration-1776-josiah-bartlett",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Josiah Bartlett is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-11"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Josiah Bartlett",
+      "source_heading": "New Hampshire",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-william-whipple",
+      "subject": "person-declaration-1776-william-whipple",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "William Whipple is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-11"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "William Whipple",
+      "source_heading": "New Hampshire",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-samuel-adams",
+      "subject": "person-declaration-1776-samuel-adams",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Samuel Adams is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-12"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Samuel Adams",
+      "source_heading": "Massachusetts",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-john-adams",
+      "subject": "person-declaration-1776-john-adams",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "John Adams is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-12"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "John Adams",
+      "source_heading": "Massachusetts",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-robert-treat-paine",
+      "subject": "person-declaration-1776-robert-treat-paine",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Robert Treat Paine is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-12"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Robert Treat Paine",
+      "source_heading": "Massachusetts",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-elbridge-gerry",
+      "subject": "person-declaration-1776-elbridge-gerry",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Elbridge Gerry is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-12"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Elbridge Gerry",
+      "source_heading": "Massachusetts",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-stephen-hopkins",
+      "subject": "person-declaration-1776-stephen-hopkins",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Stephen Hopkins is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-13"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Stephen Hopkins",
+      "source_heading": "Rhode Island",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-william-ellery",
+      "subject": "person-declaration-1776-william-ellery",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "William Ellery is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-13"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "William Ellery",
+      "source_heading": "Rhode Island",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-roger-sherman",
+      "subject": "person-roger-sherman",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Roger Sherman is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-14"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Roger Sherman",
+      "source_heading": "Connecticut",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-samuel-huntington",
+      "subject": "person-declaration-1776-samuel-huntington",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Samuel Huntington is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-14"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Samuel Huntington",
+      "source_heading": "Connecticut",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-william-williams",
+      "subject": "person-declaration-1776-william-williams",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "William Williams is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-14"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "William Williams",
+      "source_heading": "Connecticut",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-oliver-wolcott",
+      "subject": "person-declaration-1776-oliver-wolcott",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Oliver Wolcott is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-14"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Oliver Wolcott",
+      "source_heading": "Connecticut",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    },
+    {
+      "id": "declaration-1776-matthew-thornton",
+      "subject": "person-declaration-1776-matthew-thornton",
+      "object": "document-declaration-1776",
+      "predicate": "listed_signature",
+      "text": "Matthew Thornton is listed in the signature block of the Declaration of Independence.",
+      "passage_ids": [
+        "declaration-1776-signatures-15"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "July 4, 1776",
+      "date_basis": "Document adoption date, not an individual signing date. This edge records a listed signature only.",
+      "source_signature": "Matthew Thornton",
+      "source_heading": "New Hampshire",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document adoption date, not an individual signing date. This edge records a listed signature only."
+    }
+  ],
+  "identity_evidence": [],
+  "source_capture": {
+    "file": "declaration.raw",
+    "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+    "sha256": "232cda5837e186c89917ea9dabcef1d8530e085dfbebf6590c940192d49fdb95",
+    "bytes": 48690
+  },
+  "input_sha256": "b6c68636ff160ac19edb0ae09dceffae18e505afee99744cb5397fc3a2fd3a0e",
+  "audit": {
+    "corpus_sha256": "f077031a02fb5e92547cd641f4153cb09960586506bf2e584d64708ad47b967d",
+    "hash_basis": "Canonical JSON excluding audit; sorted keys, compact separators, ASCII escapes.",
+    "source_capture_sha256": "232cda5837e186c89917ea9dabcef1d8530e085dfbebf6590c940192d49fdb95"
+  }
+}

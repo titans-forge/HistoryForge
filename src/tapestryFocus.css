@@ -1,0 +1,1270 @@
+.tf-shell {
+  --ground: #141617;
+  --panel: #1b1d1f;
+  --line: #383c3e;
+  --muted: #adb7b8;
+  --ink: #f0f1eb;
+  --accent: #9bd8d1;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--ground);
+  color: var(--ink);
+  font:
+    13px/1.5 Inter,
+    Arial,
+    sans-serif;
+  letter-spacing: 0;
+}
+.tf-shell * {
+  box-sizing: border-box;
+  letter-spacing: 0;
+}
+.tf-shell button,
+.tf-shell input,
+.tf-shell select {
+  font: inherit;
+  color: inherit;
+}
+.tf-shell button,
+.tf-shell a {
+  touch-action: manipulation;
+}
+.tf-shell button {
+  cursor: pointer;
+}
+.tf-shell button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.tf-shell :is(button, a, input, select, summary):focus-visible {
+  outline: 2px solid #f0c76f;
+  outline-offset: 3px;
+}
+.tf-nav {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 0 22px;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.tf-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+  font:
+    20px Georgia,
+    serif;
+  white-space: nowrap;
+}
+.tf-brand svg {
+  color: var(--accent);
+}
+.tf-nav h1 {
+  margin: 0;
+  font:
+    17px Georgia,
+    serif;
+  padding-left: 26px;
+  border-left: 1px solid #4a4d4e;
+}
+.tf-nav h1 span {
+  font:
+    10px Inter,
+    Arial,
+    sans-serif;
+  color: #f0c76f;
+  vertical-align: super;
+  margin-left: 3px;
+}
+.tf-nav nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.tf-nav nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
+.tf-nav nav a:hover {
+  color: var(--ink);
+}
+.tf-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 22px 8px;
+  flex-shrink: 0;
+}
+.tf-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 340px;
+  max-width: 100%;
+  border: 1px solid #555d60;
+  border-radius: 4px;
+  padding-left: 12px;
+  min-height: 44px;
+  color: var(--muted);
+  background: #191c1e;
+}
+.tf-search input {
+  height: 42px;
+  min-width: 0;
+  width: 100%;
+  background: none;
+  border: 0;
+  outline: 0;
+  font-size: 13px;
+  padding: 0 8px 0 0;
+}
+.tf-search input::placeholder {
+  color: #adb7b8;
+}
+.tf-search .tf-tool {
+  border: 0;
+  background: none;
+}
+.tf-mode {
+  display: flex;
+  border: 1px solid #414749;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.tf-mode button {
+  border: 0;
+  border-right: 1px solid #414749;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 15px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.tf-mode button:last-child {
+  border-right: 0;
+}
+.tf-mode button[aria-pressed="true"] {
+  background: #303a3b;
+  color: #e3f1ee;
+}
+.tf-tool {
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  min-width: 44px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: #24292b;
+  border: 1px solid #4b5456;
+  border-radius: 4px;
+}
+.tf-tool:hover:not(:disabled) {
+  background: #354043;
+}
+.tf-counts {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.tf-counts strong {
+  font-weight: 500;
+  color: var(--ink);
+}
+.tf-counts span {
+  margin: 0 8px;
+  color: #738184;
+}
+.tf-filterbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 22px;
+  border-bottom: 1px solid var(--line);
+  min-height: 46px;
+  z-index: 6;
+  flex-shrink: 0;
+}
+.tf-regions {
+  display: flex;
+  gap: 16px;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  flex: 1;
+}
+.tf-regions button {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  padding: 0 0 1px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+  font-size: 11px;
+  border-radius: 0;
+}
+.tf-regions button[aria-pressed="true"] {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+.tf-regions i {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.tf-filters {
+  position: relative;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.tf-filters summary {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  cursor: pointer;
+  color: #ced5d2;
+  font-size: 11px;
+  list-style: none;
+}
+.tf-filters summary::-webkit-details-marker {
+  display: none;
+}
+.tf-filters label {
+  position: absolute;
+  right: 0;
+  top: 46px;
+  background: #24282a;
+  border: 1px solid #50585a;
+  box-shadow: 0 12px 28px #0005;
+  display: grid;
+  gap: 10px;
+  width: 280px;
+  max-width: calc(100vw - 32px);
+  padding: 16px;
+  font-size: 12px;
+}
+.tf-filters select {
+  width: 100%;
+  min-height: 44px;
+  background: #171a1b;
+  border: 1px solid #5b6467;
+  border-radius: 3px;
+  padding: 6px;
+}
+.tf-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 22px;
+  background: #302c22;
+  color: #f1d9a1;
+  font-size: 12px;
+}
+.tf-workspace {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  position: relative;
+}
+.tf-panel-open .tf-workspace {
+  grid-template-columns: minmax(0, 1fr) 378px;
+}
+.tf-stage {
+  min-width: 0;
+  min-height: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.tf-context {
+  padding: 22px 26px 4px;
+  flex-shrink: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+.tf-context-top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #b7c8c6;
+  font-size: 10px;
+}
+.tf-context-top button {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: 0;
+  padding: 0;
+  min-height: 32px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.tf-context h2 {
+  font:
+    24px/1.2 Georgia,
+    serif;
+  margin: 5px 0 6px;
+  max-width: 800px;
+  overflow-wrap: anywhere;
+}
+.tf-context p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+  max-width: 760px;
+}
+.tf-graph-surface {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+.tf-stage-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 22px 18px;
+  flex-shrink: 0;
+}
+.tf-zoom {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tf-renderer {
+  display: flex;
+  border: 1px solid #46514f;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.tf-renderer button {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  min-width: 50px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 3px;
+  background: none;
+  color: #b7c9c4;
+  font-size: 11px;
+}
+.tf-renderer button[aria-pressed="true"] {
+  background: #344a46;
+  color: #e8f5e9;
+}
+.tf-zoom output {
+  width: 44px;
+  text-align: center;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+.tf-local-count {
+  font-size: 11px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.tf-local-count > span > span {
+  margin: 0 6px;
+  color: #617073;
+}
+.tf-pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tf-pagination output {
+  min-width: 36px;
+  text-align: center;
+}
+.tf-list-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  border: 1px solid #4b5456;
+  border-radius: 4px;
+  background: #24292b;
+  padding: 0 12px;
+  font-size: 12px;
+}
+.tf-rail {
+  background: var(--panel);
+  border-left: 1px solid var(--line);
+  padding: 0 22px 28px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #5e6869 transparent;
+  min-width: 0;
+  min-height: 0;
+}
+.tf-rail[hidden] {
+  display: none;
+}
+.tf-rail-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: var(--panel);
+  padding: 12px 0;
+  border-bottom: 1px solid #3b4244;
+  margin-bottom: 12px;
+}
+.tf-rail-head h2 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #d4ddda;
+}
+.tf-rail-head .tf-tool {
+  border: 0;
+  background: none;
+}
+.tf-back {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 44px;
+  border: 0;
+  background: none;
+  color: var(--accent) !important;
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 12px !important;
+}
+.tf-endpoints {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.tf-endpoints > span {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tf-endpoints svg {
+  flex-shrink: 0;
+}
+.tf-endpoints button {
+  display: block;
+  border: 0;
+  background: none;
+  min-height: 44px;
+  text-align: left;
+  padding: 0;
+  color: #dbede8;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #708c85;
+}
+.tf-endpoints small {
+  display: block;
+  font-size: 10px;
+  color: #c9bba1;
+  line-height: 1.4;
+  margin-top: 7px;
+}
+.tf-relationship {
+  color: var(--accent);
+  font-size: 11px;
+  margin-top: 8px;
+}
+.tf-evidence h3 {
+  font:
+    20px/1.45 Georgia,
+    serif;
+  margin: 10px 0 20px;
+  overflow-wrap: anywhere;
+}
+.tf-date {
+  border-top: 1px solid #41484a;
+  border-bottom: 1px solid #41484a;
+  padding: 14px 0;
+  margin-bottom: 16px;
+}
+.tf-date strong {
+  font-size: 12px;
+  font-weight: 500;
+  color: #e8d9b4;
+  line-height: 1.6;
+}
+.tf-date p,
+.tf-qualification {
+  font-size: 12px;
+  line-height: 1.65;
+  color: #bdc7c8;
+  margin: 8px 0 0;
+  overflow-wrap: anywhere;
+}
+.tf-read {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 46px;
+  margin: 22px 0 12px;
+  border: 1px solid #749e97;
+  border-radius: 4px;
+  background: #253d39;
+  color: #e1efea !important;
+  font-size: 12px !important;
+}
+.tf-read span {
+  border-left: 1px solid #648b82;
+  padding-left: 10px;
+  color: #aecfc5;
+}
+.tf-read:hover {
+  background: #354f48;
+}
+.tf-dossier-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+  min-height: 44px;
+  color: #b9cfca;
+  text-decoration: none;
+  font-size: 12px;
+}
+.tf-review,
+.tf-appearances,
+.tf-passage details {
+  border-top: 1px solid #42494b;
+  padding: 14px 0;
+  margin-top: 16px;
+  font-size: 12px;
+}
+.tf-rail summary {
+  cursor: pointer;
+  color: #d2dcda;
+  min-height: 32px;
+  line-height: 1.7;
+}
+.tf-review p,
+.tf-passage details p,
+.tf-appearances p {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #b9c4c4;
+  overflow-wrap: anywhere;
+}
+.tf-review a {
+  color: #cee0da;
+  text-decoration: none;
+  display: block;
+  line-height: 1.7;
+}
+.tf-review svg {
+  display: inline;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.tf-review p > span,
+.tf-appearances small {
+  display: block;
+  margin-top: 5px;
+}
+.tf-passage {
+  border-top: 2px solid #a1b8ac;
+  margin-top: 24px;
+  padding-top: 18px;
+}
+.tf-source-kind {
+  font-size: 10px;
+  color: #e2c58b;
+}
+.tf-passage h4 {
+  font:
+    18px/1.4 Georgia,
+    serif;
+  margin: 8px 0;
+}
+.tf-passage > p {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #c5cfcd;
+  overflow-wrap: anywhere;
+}
+.tf-passage blockquote {
+  font:
+    17px/1.7 Georgia,
+    serif;
+  color: #f0e9d7;
+  margin: 20px 0;
+  padding: 0 0 0 15px;
+  border-left: 2px solid #9aab9d;
+  background: none;
+  overflow-wrap: anywhere;
+}
+.tf-passage .tf-citation {
+  font-size: 12px;
+  color: #e1d6b8;
+}
+.tf-source-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #b7dbd1;
+  text-decoration: none;
+  min-height: 44px;
+  font-size: 12px;
+}
+.tf-passage .tf-hash {
+  font: 10px/1.7 monospace;
+  word-break: break-all;
+  color: #9babae;
+}
+.tf-shell .source-reuse-notice {
+  margin: 18px 0;
+  padding: 14px 0;
+  border-top: 1px solid #7a9290;
+  border-bottom: 1px solid #7a9290;
+  background: none;
+  color: #d0ddda;
+}
+.tf-shell .source-reuse-notice h2 {
+  font:
+    14px/1.5 Inter,
+    Arial,
+    sans-serif;
+}
+.tf-shell .source-reuse-notice p,
+.tf-shell .source-notice-actions {
+  font-size: 11px;
+  line-height: 1.7;
+}
+.tf-shell .source-notice-actions {
+  display: block;
+}
+.tf-shell .source-notice-actions a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent);
+  min-height: 44px;
+  overflow-wrap: anywhere;
+}
+.tf-shell .source-reuse-notice pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: 10px/1.6 monospace;
+  max-height: 260px;
+  overflow: auto;
+}
+.tf-evidence-error {
+  color: #efb4a2;
+  line-height: 1.6;
+  padding: 8px 0;
+}
+.tf-evidence-error button,
+.tf-empty button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: #293234;
+  border: 1px solid #6a7b7e;
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.tf-loading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+  padding: 16px 0;
+}
+.tf-entity-heading {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.tf-entity-heading h3 {
+  font:
+    25px/1.2 Georgia,
+    serif;
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
+.tf-identity {
+  font-size: 11px;
+  color: #c3c9bb;
+}
+.tf-entity h4 {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted);
+  margin: 22px 0 8px;
+}
+.tf-connections,
+.tf-entities ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tf-connections li,
+.tf-entities li {
+  border-bottom: 1px solid #394244;
+}
+.tf-connections button {
+  display: block;
+  width: 100%;
+  padding: 18px 0;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+.tf-connections button:hover strong {
+  color: #c5eadf;
+}
+.tf-relation-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--accent);
+  font-size: 11px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.tf-connections strong {
+  font:
+    15px/1.55 Georgia,
+    serif;
+  display: block;
+  overflow-wrap: anywhere;
+}
+.tf-connections small {
+  display: block;
+  font-size: 11px;
+  color: #b0babc;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+.tf-entities > p {
+  color: var(--muted);
+  font-size: 12px;
+}
+.tf-entities li button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 72px;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: none;
+  padding: 10px 0;
+}
+.tf-entities li button > svg {
+  flex-shrink: 0;
+}
+.tf-entities li button > span {
+  flex: 1;
+  min-width: 0;
+}
+.tf-entities strong {
+  font:
+    16px/1.4 Georgia,
+    serif;
+  display: block;
+  overflow-wrap: anywhere;
+}
+.tf-entities small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.tf-more {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 18px;
+  border: 1px solid #5c6b6f;
+  background: none;
+  border-radius: 4px;
+}
+.tf-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  text-align: center;
+  color: var(--muted);
+  gap: 16px;
+}
+.tf-empty h2 {
+  font:
+    24px Georgia,
+    serif;
+  margin: 0;
+  color: var(--ink);
+}
+.tf-empty p {
+  max-width: 480px;
+  overflow-wrap: anywhere;
+}
+.tf-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  min-height: 32px;
+  padding: 6px 22px;
+  border-top: 1px solid var(--line);
+  font-size: 10px;
+  color: #adb9b6;
+  flex-shrink: 0;
+}
+.tf-focus-graph {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.tf-strands {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+}
+.tf-edge-hit {
+  cursor: pointer;
+}
+.tf-graph-node {
+  position: absolute;
+  transform: translate(-50%, -31px);
+  width: 154px;
+  min-height: 104px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  background: none;
+  border: 0;
+  padding: 8px;
+  color: var(--ink);
+  border-radius: 4px;
+}
+.tf-node-mark {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--entity-color);
+  border-radius: 50%;
+  background: #1c2223;
+  color: var(--entity-color);
+}
+.tf-graph-node.selected .tf-node-mark {
+  outline: 1px solid #d8e8df;
+  outline-offset: 4px;
+  box-shadow: 0 0 16px #a0dacf18;
+}
+.tf-graph-node strong {
+  font:
+    15px/1.25 Georgia,
+    serif;
+  text-align: center;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  background: var(--ground);
+  padding: 1px 3px;
+}
+.tf-graph-node small {
+  font-size: 10px;
+  color: #b9c5c1;
+  background: var(--ground);
+}
+.tf-graph-node:hover .tf-node-mark {
+  background: #31403e;
+}
+.tf-predicate {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  max-width: 36%;
+  text-align: center;
+  background: var(--ground);
+  padding: 8px 12px;
+  pointer-events: none;
+}
+.tf-predicate > span {
+  font:
+    16px/1.4 Georgia,
+    serif;
+  color: #e7d4a5;
+  display: block;
+  overflow-wrap: anywhere;
+}
+.tf-predicate small {
+  display: block;
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.tf-focus-graph.compact .tf-graph-node {
+  transform: translate(-50%, -26px);
+  width: 140px;
+  min-height: 84px;
+  gap: 4px;
+}
+.tf-focus-graph.compact .tf-node-mark {
+  width: 36px;
+  height: 36px;
+}
+.tf-focus-graph.compact .tf-graph-node strong {
+  font-size: 13px;
+}
+.tf-focus-graph.compact .tf-predicate {
+  max-width: 70%;
+  padding: 6px 10px;
+}
+.tf-focus-graph.compact .tf-predicate > span {
+  font-size: 14px;
+}
+.tf-focus-graph.compact .tf-predicate small {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .tf-panel-open .tf-workspace {
+    grid-template-columns: minmax(0, 1fr) 340px;
+  }
+  .tf-counts {
+    display: none;
+  }
+  .tf-toolbar > .tf-tool {
+    margin-left: auto;
+  }
+  .tf-context {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .tf-nav nav {
+    gap: 18px;
+  }
+}
+@media (max-width: 760px) {
+  .tf-nav {
+    padding: 0 14px;
+    gap: 14px;
+    min-height: 52px;
+  }
+  .tf-brand {
+    font-size: 17px;
+  }
+  .tf-nav h1 {
+    font-size: 15px;
+    padding-left: 14px;
+  }
+  .tf-nav nav a:not(:last-child) {
+    display: none;
+  }
+  .tf-nav nav a {
+    font-size: 10px;
+  }
+  .tf-toolbar {
+    padding: 8px 14px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .tf-search {
+    flex: 1;
+    min-width: 190px;
+    width: auto;
+  }
+  .tf-mode {
+    order: 3;
+    width: calc(100% - 112px);
+    justify-content: center;
+  }
+  .tf-renderer {
+    order: 4;
+    width: 104px;
+  }
+  .tf-renderer button {
+    height: 36px;
+    flex: 1;
+    min-width: 0;
+  }
+  .tf-renderer button svg {
+    width: 14px;
+  }
+  .tf-spatial-bottom {
+    gap: 4px;
+  }
+  .tf-spatial-bottom .tf-zoom {
+    gap: 2px;
+  }
+  .tf-spatial-bottom .tf-zoom output {
+    display: none;
+  }
+  .tf-spatial-bottom .tf-tool {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+  }
+  .tf-spatial-bottom .tf-pagination {
+    gap: 0;
+  }
+  .tf-mode button {
+    flex: 1;
+    justify-content: center;
+    min-height: 36px;
+  }
+  .tf-filterbar {
+    padding: 0 14px;
+    gap: 12px;
+    min-height: 40px;
+  }
+  .tf-regions {
+    gap: 13px;
+  }
+  .tf-regions button {
+    min-height: 40px;
+    font-size: 10px;
+  }
+  .tf-filters summary {
+    min-height: 40px;
+  }
+  .tf-filters summary > span {
+    display: none;
+  }
+  .tf-panel-open .tf-workspace {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(280px, 46%) minmax(0, 1fr);
+  }
+  .tf-rail {
+    border-left: 0;
+    border-top: 1px solid #55605e;
+    padding: 0 18px 24px;
+  }
+  .tf-rail-head {
+    padding: 4px 0;
+    margin-bottom: 8px;
+  }
+  .tf-context {
+    padding: 10px 16px 0;
+  }
+  .tf-context-top {
+    font-size: 9px;
+    min-height: 22px;
+  }
+  .tf-context-top button {
+    min-height: 22px;
+  }
+  .tf-context h2 {
+    font-size: 18px;
+    margin: 2px 0 3px;
+  }
+  .tf-context p {
+    font-size: 10px;
+  }
+  .tf-stage-bottom {
+    padding: 6px 14px 8px;
+    gap: 8px;
+  }
+  .tf-stage-bottom .tf-list-toggle span {
+    display: none;
+  }
+  .tf-stage-bottom .tf-list-toggle {
+    padding: 0 12px;
+  }
+  .tf-local-count {
+    font-size: 10px;
+    gap: 6px;
+  }
+  .tf-local-count .tf-pagination .tf-tool {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+  }
+  .tf-footer {
+    font-size: 9px;
+    padding: 5px 14px;
+    min-height: 28px;
+  }
+  .tf-footer span:last-child {
+    max-width: 52%;
+    text-align: right;
+  }
+  .tf-notice {
+    font-size: 11px;
+    padding-left: 14px;
+  }
+  .tf-graph-node small {
+    display: none;
+  }
+  .tf-panel-open .tf-focus-graph.compact .tf-graph-node {
+    transform: translate(-50%, -22px);
+    min-height: 60px;
+    width: 132px;
+    gap: 3px;
+  }
+  .tf-panel-open .tf-focus-graph.compact .tf-node-mark {
+    width: 28px;
+    height: 28px;
+  }
+  .tf-panel-open .tf-focus-graph.compact .tf-node-mark svg {
+    width: 16px;
+    height: 16px;
+  }
+  .tf-panel-open .tf-focus-graph.compact .tf-predicate small {
+    display: none;
+  }
+  .tf-panel-open .tf-focus-graph.compact .tf-predicate > span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 410px) {
+  .tf-nav {
+    gap: 10px;
+  }
+  .tf-brand span {
+    font-size: 15px;
+  }
+  .tf-brand svg {
+    width: 19px;
+  }
+  .tf-nav h1 {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  .tf-nav nav {
+    margin-left: auto;
+  }
+  .tf-nav nav a {
+    font-size: 9px;
+  }
+  .tf-search {
+    min-width: 170px;
+  }
+  .tf-context h2 {
+    font-size: 16px;
+  }
+  .tf-panel-open .tf-workspace {
+    grid-template-rows: minmax(280px, 46%) minmax(0, 1fr);
+  }
+}
+@media (max-height: 540px) and (orientation: landscape) {
+  .tf-renderer {
+    order: 0;
+    width: auto;
+  }
+  .tf-graph-node small {
+    display: none;
+  }
+  .tf-context {
+    padding: 4px 16px 0;
+  }
+  .tf-context-top,
+  .tf-context-top button {
+    min-height: 22px;
+  }
+  .tf-nav {
+    min-height: 44px;
+  }
+  .tf-toolbar {
+    padding: 6px 12px;
+    flex-wrap: nowrap;
+  }
+  .tf-mode {
+    order: 0;
+    width: auto;
+  }
+  .tf-mode span {
+    display: none;
+  }
+  .tf-mode button {
+    min-width: 44px;
+  }
+  .tf-search {
+    max-width: 320px;
+  }
+  .tf-filterbar {
+    min-height: 36px;
+  }
+  .tf-regions button,
+  .tf-filters summary {
+    min-height: 36px;
+  }
+  .tf-panel-open .tf-workspace {
+    grid-template-columns: minmax(0, 1fr) 300px;
+    grid-template-rows: minmax(0, 1fr);
+  }
+  .tf-rail {
+    border-top: 0;
+    border-left: 1px solid var(--line);
+  }
+  .tf-context p {
+    display: none;
+  }
+  .tf-context h2 {
+    font-size: 16px;
+  }
+  .tf-stage-bottom {
+    padding-top: 0;
+    padding-bottom: 4px;
+  }
+  .tf-footer {
+    min-height: 24px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tf-shell * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

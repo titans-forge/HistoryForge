@@ -1,0 +1,755 @@
+.tapestry-shell {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: #10181a;
+  color: #e6eae6;
+  overflow: hidden;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+.tapestry-shell * {
+  box-sizing: border-box;
+  letter-spacing: 0;
+}
+.tapestry-shell button,
+.tapestry-shell input,
+.tapestry-shell select {
+  font: inherit;
+  color: inherit;
+}
+.tapestry-shell button,
+.tapestry-shell a,
+.tapestry-shell input,
+.tapestry-shell select {
+  touch-action: manipulation;
+}
+.tapestry-shell button {
+  cursor: pointer;
+}
+.tapestry-shell button:focus-visible,
+.tapestry-shell a:focus-visible,
+.tapestry-shell input:focus-visible,
+.tapestry-shell select:focus-visible,
+.tapestry-shell canvas:focus-visible {
+  outline: 2px solid #88d6ce;
+  outline-offset: 3px;
+}
+.tapestry-nav {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  padding: 0 24px;
+  border-bottom: 1px solid #304043;
+  flex-shrink: 0;
+}
+.tapestry-nav .brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+  color: #e6eae6;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  text-transform: none;
+}
+.tapestry-nav .brand svg {
+  color: #8dd3c7;
+}
+.tapestry-nav nav {
+  display: flex;
+  gap: 26px;
+  align-self: stretch;
+  align-items: stretch;
+}
+.tapestry-nav nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #a8b6b9;
+  font-size: 13px;
+  border-bottom: 2px solid transparent;
+}
+.tapestry-nav nav a[aria-current] {
+  color: #f0f2ed;
+  border-color: #c7ded8;
+}
+.tapestry-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 24px 12px;
+  flex-shrink: 0;
+}
+.tapestry-heading h1 {
+  font:
+    400 36px/1.1 Georgia,
+    serif;
+  margin: 0;
+  color: #f1f2e9;
+}
+.tapestry-counts {
+  color: #99aaad;
+  font-size: 11px;
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+.tapestry-counts span {
+  margin: 0 7px;
+  color: #5f7276;
+}
+.tapestry-search {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 330px;
+  min-height: 42px;
+  border: 1px solid #526368;
+  border-radius: 4px;
+  padding: 0 12px;
+  background: #0e1618;
+  color: #a9babd;
+}
+.tapestry-search input {
+  min-width: 0;
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  background: none;
+  font-size: 12px;
+}
+.tapestry-search button {
+  display: grid;
+  place-items: center;
+  padding: 3px;
+  background: none;
+  border: 0;
+}
+.tapestry-filters {
+  padding: 0 24px 12px;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-bottom: 1px solid #26373a;
+}
+.tapestry-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3px 8px;
+}
+.tapestry-legend button {
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  background: none;
+  padding: 5px 2px;
+  font-size: 11px;
+  color: #b3c1c3;
+  border-radius: 0;
+}
+.tapestry-legend button.chosen {
+  color: #f4f6ed;
+  border-bottom-color: #a5cdc6;
+}
+.tapestry-legend i,
+.tapestry-contexts i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+.tapestry-filters select {
+  width: 198px;
+  max-width: 100%;
+  height: 32px;
+  border: 1px solid #34484c;
+  background: #152023;
+  border-radius: 3px;
+  padding: 3px 7px;
+  font-size: 11px;
+  color: #c1cdce;
+}
+.tapestry-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 322px;
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+.tapestry-stage {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+.tapestry-canvas {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.tapestry-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: grab;
+}
+.tapestry-controls {
+  position: absolute;
+  left: 22px;
+  bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.tapestry-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #3b5054;
+  border-radius: 4px;
+  background: #172326;
+  color: #d9e4e3;
+  padding: 0;
+}
+.tapestry-icon:hover,
+.tapestry-browse:hover {
+  background: #253538;
+  border-color: #658181;
+}
+.tapestry-controls output {
+  min-width: 44px;
+  font-size: 10px;
+  text-align: center;
+  color: #a6b8b9;
+  font-variant-numeric: tabular-nums;
+}
+.tapestry-browse {
+  position: absolute;
+  bottom: 22px;
+  right: 20px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #3b5054;
+  border-radius: 4px;
+  background: #172326;
+  padding: 0 10px;
+  color: #d1dedd;
+  font-size: 11px;
+}
+.tapestry-inspector {
+  border-left: 1px solid #304043;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  min-height: 0;
+  background: #10191c;
+  padding: 0 20px 24px;
+  scrollbar-width: thin;
+  scrollbar-color: #385154 transparent;
+}
+.tapestry-inspector-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  background: #10191c;
+  padding: 19px 0 14px;
+  z-index: 2;
+}
+.tapestry-inspector-top h2 {
+  font:
+    400 19px/1.25 Georgia,
+    serif;
+  margin: 0;
+}
+.tapestry-inspector-top .tapestry-icon {
+  width: 28px;
+  height: 28px;
+  border: 0;
+  background: none;
+  display: none;
+}
+.tapestry-back {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #95cfc6 !important;
+  border: 0;
+  background: none;
+  padding: 4px 0;
+  margin-bottom: 16px;
+}
+.tapestry-entity h3 {
+  font:
+    400 27px/1.16 Georgia,
+    serif;
+  margin: 0 0 10px;
+  overflow-wrap: anywhere;
+}
+.tapestry-type {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #a8bcbd;
+}
+.tapestry-type span {
+  margin: 0 4px;
+  color: #627d7e;
+}
+.tapestry-contexts {
+  display: flex;
+  gap: 8px 14px;
+  flex-wrap: wrap;
+  margin: 14px 0 18px;
+  font-size: 11px;
+  color: #c4d0cd;
+}
+.tapestry-contexts span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.tapestry-inspector details {
+  font-size: 11px;
+  border-top: 1px solid #2c4144;
+  border-bottom: 1px solid #2c4144;
+  padding: 13px 0;
+  margin: 16px 0;
+}
+.tapestry-inspector summary {
+  cursor: pointer;
+  color: #bfd0ce;
+  font-size: 11px;
+}
+.tapestry-inspector details p {
+  line-height: 1.6;
+  color: #99b0b2;
+  margin: 12px 0 0;
+  overflow-wrap: anywhere;
+}
+.tapestry-inspector details small {
+  display: block;
+  margin-top: 4px;
+  color: #839a9d;
+}
+.tapestry-inspector h4 {
+  font-size: 11px;
+  font-weight: 500;
+  color: #afc2c3;
+  margin: 20px 0 8px;
+  line-height: 1.6;
+}
+.tapestry-connections,
+.tapestry-entity-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tapestry-connections li {
+  border-bottom: 1px solid #263b3f;
+}
+.tapestry-connections button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  padding: 14px 0;
+  color: #d6dfdc;
+}
+.tapestry-connections button:hover strong {
+  color: #b4e7d9;
+}
+.tapestry-connections button > span {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #93cbbf;
+  font-size: 10px;
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+.tapestry-connections strong {
+  display: block;
+  font:
+    400 14px/1.5 Georgia,
+    serif;
+}
+.tapestry-connections small {
+  display: block;
+  color: #8ba3a5;
+  font-size: 10px;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+.tapestry-more {
+  border: 1px solid #3a5357;
+  border-radius: 3px;
+  background: none;
+  padding: 9px 12px;
+  font-size: 11px;
+  width: 100%;
+  margin-top: 18px;
+  min-height: 38px;
+}
+.tapestry-more:hover {
+  background: #1d2f32;
+}
+.tapestry-list-count {
+  font-size: 11px;
+  color: #91a9ac;
+  margin: 0 0 10px;
+}
+.tapestry-entity-list li {
+  border-bottom: 1px solid #22373b;
+}
+.tapestry-entity-list li button {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 62px;
+  width: 100%;
+  background: none;
+  border: 0;
+  text-align: left;
+  padding: 10px 0;
+  color: #d5dfda;
+}
+.tapestry-entity-list li button:hover {
+  background: #17272a;
+}
+.tapestry-entity-list i {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.tapestry-entity-list li span {
+  flex: 1;
+  min-width: 0;
+}
+.tapestry-entity-list strong {
+  display: block;
+  font:
+    400 15px/1.35 Georgia,
+    serif;
+  overflow-wrap: anywhere;
+}
+.tapestry-entity-list small {
+  display: block;
+  color: #8da3a5;
+  font-size: 10px;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+.tapestry-entity-list > p:last-child {
+  color: #b0c0c0;
+  font-size: 13px;
+  margin-top: 25px;
+}
+.tapestry-evidence h3 {
+  font:
+    400 20px/1.45 Georgia,
+    serif;
+  margin: 18px 0 12px;
+  overflow-wrap: anywhere;
+}
+.tapestry-evidence > p {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #a3b8b9;
+}
+.tapestry-endpoints {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #b3d9d0;
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.tapestry-endpoints button {
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 36px;
+  padding: 4px 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-decoration-color: #577c76;
+  text-underline-offset: 3px;
+}
+.tapestry-endpoints button:hover {
+  color: #e0f4ed;
+}
+.tapestry-endpoints svg {
+  flex-shrink: 0;
+}
+.tapestry-evidence-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 42px;
+  border: 1px solid #557c76;
+  border-radius: 3px;
+  color: #bfe6d9;
+  background: #1b3533;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 20px 0;
+}
+.tapestry-evidence-link:hover {
+  background: #284a43;
+}
+.tapestry-evidence details a {
+  display: block;
+  color: #b7d9cf;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 14px 0;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.tapestry-evidence details a span {
+  display: block;
+  color: #b5c4c4;
+}
+.tapestry-evidence details a svg {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+.tapestry-message {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  padding: 40px;
+  color: #afc9c7;
+  pointer-events: none;
+}
+.tapestry-message h2 {
+  font:
+    400 25px Georgia,
+    serif;
+  margin: 0;
+}
+.tapestry-message p {
+  font-size: 12px;
+  line-height: 1.7;
+  max-width: 450px;
+}
+.tapestry-message button {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #43615e;
+  background: #1a3030;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+.tapestry-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 34px;
+  padding: 7px 24px;
+  border-top: 1px solid #304043;
+  font-size: 10px;
+  color: #91a6a7;
+  flex-shrink: 0;
+}
+@media (min-width: 901px) {
+  .tapestry-browse {
+    display: none;
+  }
+}
+@media (max-width: 1150px) {
+  .tapestry-workspace {
+    grid-template-columns: minmax(0, 1fr) 292px;
+  }
+  .tapestry-filters {
+    align-items: flex-start;
+  }
+  .tapestry-filters select {
+    width: 155px;
+  }
+  .tapestry-legend {
+    gap: 2px 7px;
+  }
+  .tapestry-legend button {
+    font-size: 10px;
+  }
+  .tapestry-inspector {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .tapestry-workspace {
+    display: block;
+  }
+  .tapestry-stage {
+    height: 100%;
+  }
+  .tapestry-inspector {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 88%;
+    border-left: 1px solid #416062;
+    box-shadow: -14px 0 35px #07101277;
+    z-index: 4;
+  }
+  .panel-open .tapestry-inspector {
+    display: block;
+  }
+  .tapestry-inspector-top .tapestry-icon {
+    display: grid;
+  }
+  .tapestry-search {
+    width: 290px;
+  }
+  .tapestry-nav {
+    gap: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .tapestry-nav {
+    padding: 0 14px;
+    min-height: 48px;
+    gap: 16px;
+    justify-content: space-between;
+  }
+  .tapestry-nav .brand {
+    font-size: 16px;
+    gap: 8px;
+  }
+  .tapestry-nav .brand svg {
+    width: 20px;
+  }
+  .tapestry-nav nav {
+    gap: 13px;
+  }
+  .tapestry-nav nav a {
+    font-size: 10px;
+  }
+  .tapestry-heading {
+    padding: 14px 14px 8px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .tapestry-heading h1 {
+    font-size: 29px;
+  }
+  .tapestry-counts {
+    font-size: 10px;
+    margin: 5px 0 0;
+  }
+  .tapestry-search {
+    width: 100%;
+    min-height: 38px;
+  }
+  .tapestry-search input {
+    height: 36px;
+    font-size: 12px;
+  }
+  .tapestry-filters {
+    padding: 0 14px 8px;
+    display: block;
+  }
+  .tapestry-legend {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 12px;
+    scrollbar-width: thin;
+    padding-bottom: 5px;
+  }
+  .tapestry-legend button {
+    white-space: nowrap;
+    min-height: 32px;
+    font-size: 11px;
+  }
+  .tapestry-filters select {
+    width: 100%;
+    height: 31px;
+    font-size: 11px;
+  }
+  .tapestry-controls {
+    left: 14px;
+    bottom: 14px;
+  }
+  .tapestry-icon {
+    width: 34px;
+    height: 36px;
+  }
+  .tapestry-controls output {
+    min-width: 35px;
+  }
+  .tapestry-browse {
+    right: 14px;
+    bottom: 14px;
+    height: 36px;
+    font-size: 10px;
+    padding: 0 9px;
+    gap: 6px;
+  }
+  .tapestry-footer {
+    padding: 7px 14px;
+    font-size: 9px;
+    min-height: 30px;
+  }
+  .tapestry-inspector {
+    top: 0;
+    width: 340px;
+    max-width: 94%;
+  }
+  .tapestry-entity h3 {
+    font-size: 24px;
+  }
+  .tapestry-inspector-top {
+    padding-top: 16px;
+  }
+  .tapestry-stage {
+    min-height: 230px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tapestry-shell * {
+    scroll-behavior: auto;
+    animation: none;
+    transition: none;
+  }
+}

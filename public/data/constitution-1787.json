@@ -1,0 +1,922 @@
+{
+  "dossier": {
+    "id": "constitution-1787",
+    "title": "United States Constitution",
+    "period": "1787",
+    "region": "americas"
+  },
+  "sources": [
+    {
+      "id": "constitution",
+      "title": "United States Constitution",
+      "author": "Federal Convention",
+      "kind": "primary document / modern institutional transcription",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "edition": "National Archives transcription of the parchment Constitution inscribed by Jacob Shallus.",
+      "provenance_credit": "National Archives transcription of the parchment Constitution inscribed by Jacob Shallus.",
+      "perspective": "A formal subscription list. Presence in a list does not establish co-authorship, interpersonal contact, unanimity of personal opinion, or completeness of political participation.",
+      "dependence": "Both the transcription and linked identity biographies are from NARA; not independent historical witnesses.",
+      "rights": "Historical signature text only; no images or modern essays reproduced. See THIRD_PARTY_NOTICES.md."
+    }
+  ],
+  "passages": [
+    {
+      "id": "constitution-1787-signatures-1",
+      "source_id": "constitution",
+      "text": "G\u00b0. Washington\nPresidt and deputy from Virginia",
+      "text_sha256": "ff1a9865a0952082c44aaccd452d420bbac7cbbcd572b8f0900ae0430eb17428",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (Virginia), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "constitution-1787-signatures-2",
+      "source_id": "constitution",
+      "text": "Delaware\nGeo: Read\nGunning Bedford jun\nJohn Dickinson\nRichard Bassett\nJaco: Broom",
+      "text_sha256": "f52f4be2c3ca5bdc9911057670438b3e3b56d3834cfbe0a7afe3fc25a641d28d",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (Delaware), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "constitution-1787-signatures-3",
+      "source_id": "constitution",
+      "text": "Maryland\nJames McHenry\nDan of St Thos. Jenifer\nDanl. Carroll",
+      "text_sha256": "3c4ee94e61d9b348e8f04cce81893ae1f89e11f5caba956482d80043c59a7c71",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (Maryland), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "constitution-1787-signatures-4",
+      "source_id": "constitution",
+      "text": "Virginia\nJohn Blair\nJames Madison Jr.",
+      "text_sha256": "ef15f4874835154b1c6ecd754d84d607da219d273364b1066b240cebaadc1c42",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (Virginia), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "constitution-1787-signatures-5",
+      "source_id": "constitution",
+      "text": "North Carolina\nWm. Blount\nRichd. Dobbs Spaight\nHu Williamson",
+      "text_sha256": "6616d6eda2f7e316352b3cdd644b687382b5f91644affcf2fc5a74b702bedead",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (North Carolina), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "constitution-1787-signatures-6",
+      "source_id": "constitution",
+      "text": "South Carolina\nJ. Rutledge\nCharles Cotesworth Pinckney\nCharles Pinckney\nPierce Butler",
+      "text_sha256": "77b96c4967772ddd0b152617fcf6f4a54f6ee30bdd83b84fad08ee4d3eebf6fb",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (South Carolina), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "constitution-1787-signatures-7",
+      "source_id": "constitution",
+      "text": "Georgia\nWilliam Few\nAbr Baldwin",
+      "text_sha256": "27a91b333bb0d0e22ef326b52f6b7ae72631cd8567b0a116afc9b5f915bedee6",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (Georgia), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "constitution-1787-signatures-8",
+      "source_id": "constitution",
+      "text": "New Hampshire\nJohn Langdon\nNicholas Gilman",
+      "text_sha256": "7274109fffbc8d4bbcc824ec8ea6735aa51c1999b0fd53e61e987c7944afe8ef",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (New Hampshire), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "constitution-1787-signatures-9",
+      "source_id": "constitution",
+      "text": "Massachusetts\nNathaniel Gorham\nRufus King",
+      "text_sha256": "bb2b2c15fda62047edc9162977fb50160355815d838591218b2da9bac46497e1",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (Massachusetts), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "constitution-1787-signatures-10",
+      "source_id": "constitution",
+      "text": "Connecticut\nWm. Saml. Johnson\nRoger Sherman",
+      "text_sha256": "b023b4b2e310cc8a591a22e5d62ad67047a27f4d3cafab41111b6f995377fca5",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (Connecticut), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "constitution-1787-signatures-11",
+      "source_id": "constitution",
+      "text": "New York\nAlexander Hamilton",
+      "text_sha256": "055bc46c8f29b7470ef79f8b32fc320207a3dd49ab1983ad070b650a14f9590a",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (New York), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "constitution-1787-signatures-12",
+      "source_id": "constitution",
+      "text": "New Jersey\nWil: Livingston\nDavid Brearley\nWm. Paterson\nJona: Dayton",
+      "text_sha256": "bdea61a6ed711370293cf4c4c8f8ee8f88faba077978bd20fab6d8b2faa39012",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (New Jersey), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    },
+    {
+      "id": "constitution-1787-signatures-13",
+      "source_id": "constitution",
+      "text": "Pennsylvania\nB Franklin\nThomas Mifflin\nRobt. Morris\nGeo. Clymer\nThos. FitzSimons\nJared Ingersoll\nJames Wilson\nGouv Morris",
+      "text_sha256": "9966040f95a5ac67aa07bb971a61c985218c05aa0e4c6b189a61dc2fbe5c1f07",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "citation": "United States Constitution, signature block (Pennsylvania), National Archives transcription.",
+      "text_scope": "selected_excerpt",
+      "editorial_context": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary. Names are reproduced in transcription order. Historical signature blocks only. HTML text-node extraction; line breaks separate HTML text nodes. Names and abbreviations are not silently expanded.",
+      "translation_credit": "English source; no translation.",
+      "license_credit": "Public-domain historical signature text. Transcription credit: U.S. National Archives and Records Administration. No endorsement implied.",
+      "license_scope": "public_domain_historical_text"
+    }
+  ],
+  "claims": [
+    {
+      "id": "constitution-1787-g-washington",
+      "subject": "person-constitution-1787-g-washington",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "G\u00b0. Washington is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-1"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "G\u00b0. Washington",
+      "source_heading": "Virginia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-geo-read",
+      "subject": "person-george-read",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "George Read is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-2"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Geo: Read",
+      "source_heading": "Delaware",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-gunning-bedford-jun",
+      "subject": "person-constitution-1787-gunning-bedford-jun",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Gunning Bedford jun is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-2"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Gunning Bedford jun",
+      "source_heading": "Delaware",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-john-dickinson",
+      "subject": "person-constitution-1787-john-dickinson",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "John Dickinson is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-2"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "John Dickinson",
+      "source_heading": "Delaware",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-richard-bassett",
+      "subject": "person-constitution-1787-richard-bassett",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Richard Bassett is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-2"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Richard Bassett",
+      "source_heading": "Delaware",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-jaco-broom",
+      "subject": "person-constitution-1787-jaco-broom",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Jaco: Broom is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-2"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Jaco: Broom",
+      "source_heading": "Delaware",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-james-mchenry",
+      "subject": "person-constitution-1787-james-mchenry",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "James McHenry is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-3"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "James McHenry",
+      "source_heading": "Maryland",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-dan-of-st-thos-jenifer",
+      "subject": "person-constitution-1787-dan-of-st-thos-jenifer",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Dan of St Thos. Jenifer is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-3"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Dan of St Thos. Jenifer",
+      "source_heading": "Maryland",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-danl-carroll",
+      "subject": "person-constitution-1787-danl-carroll",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Danl. Carroll is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-3"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Danl. Carroll",
+      "source_heading": "Maryland",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-john-blair",
+      "subject": "person-constitution-1787-john-blair",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "John Blair is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-4"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "John Blair",
+      "source_heading": "Virginia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-james-madison-jr",
+      "subject": "person-constitution-1787-james-madison-jr",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "James Madison Jr. is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-4"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "James Madison Jr.",
+      "source_heading": "Virginia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-wm-blount",
+      "subject": "person-constitution-1787-wm-blount",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Wm. Blount is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-5"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Wm. Blount",
+      "source_heading": "North Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-richd-dobbs-spaight",
+      "subject": "person-constitution-1787-richd-dobbs-spaight",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Richd. Dobbs Spaight is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-5"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Richd. Dobbs Spaight",
+      "source_heading": "North Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-hu-williamson",
+      "subject": "person-constitution-1787-hu-williamson",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Hu Williamson is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-5"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Hu Williamson",
+      "source_heading": "North Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-j-rutledge",
+      "subject": "person-constitution-1787-j-rutledge",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "J. Rutledge is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-6"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "J. Rutledge",
+      "source_heading": "South Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-charles-cotesworth-pinckney",
+      "subject": "person-constitution-1787-charles-cotesworth-pinckney",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Charles Cotesworth Pinckney is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-6"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Charles Cotesworth Pinckney",
+      "source_heading": "South Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-charles-pinckney",
+      "subject": "person-constitution-1787-charles-pinckney",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Charles Pinckney is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-6"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Charles Pinckney",
+      "source_heading": "South Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-pierce-butler",
+      "subject": "person-constitution-1787-pierce-butler",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Pierce Butler is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-6"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Pierce Butler",
+      "source_heading": "South Carolina",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-william-few",
+      "subject": "person-constitution-1787-william-few",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "William Few is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-7"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "William Few",
+      "source_heading": "Georgia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-abr-baldwin",
+      "subject": "person-constitution-1787-abr-baldwin",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Abr Baldwin is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-7"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Abr Baldwin",
+      "source_heading": "Georgia",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-john-langdon",
+      "subject": "person-constitution-1787-john-langdon",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "John Langdon is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-8"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "John Langdon",
+      "source_heading": "New Hampshire",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-nicholas-gilman",
+      "subject": "person-constitution-1787-nicholas-gilman",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Nicholas Gilman is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-8"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Nicholas Gilman",
+      "source_heading": "New Hampshire",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-nathaniel-gorham",
+      "subject": "person-constitution-1787-nathaniel-gorham",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Nathaniel Gorham is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-9"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Nathaniel Gorham",
+      "source_heading": "Massachusetts",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-rufus-king",
+      "subject": "person-constitution-1787-rufus-king",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Rufus King is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-9"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Rufus King",
+      "source_heading": "Massachusetts",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-wm-saml-johnson",
+      "subject": "person-constitution-1787-wm-saml-johnson",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Wm. Saml. Johnson is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-10"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Wm. Saml. Johnson",
+      "source_heading": "Connecticut",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-roger-sherman",
+      "subject": "person-roger-sherman",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Roger Sherman is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-10"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Roger Sherman",
+      "source_heading": "Connecticut",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-alexander-hamilton",
+      "subject": "person-constitution-1787-alexander-hamilton",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Alexander Hamilton is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-11"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Alexander Hamilton",
+      "source_heading": "New York",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-wil-livingston",
+      "subject": "person-constitution-1787-wil-livingston",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Wil: Livingston is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-12"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Wil: Livingston",
+      "source_heading": "New Jersey",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-david-brearley",
+      "subject": "person-constitution-1787-david-brearley",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "David Brearley is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-12"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "David Brearley",
+      "source_heading": "New Jersey",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-wm-paterson",
+      "subject": "person-constitution-1787-wm-paterson",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Wm. Paterson is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-12"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Wm. Paterson",
+      "source_heading": "New Jersey",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-jona-dayton",
+      "subject": "person-constitution-1787-jona-dayton",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Jona: Dayton is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-12"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Jona: Dayton",
+      "source_heading": "New Jersey",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-b-franklin",
+      "subject": "person-benjamin-franklin",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Benjamin Franklin is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-13"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "B Franklin",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-thomas-mifflin",
+      "subject": "person-constitution-1787-thomas-mifflin",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Thomas Mifflin is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-13"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Thomas Mifflin",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-robt-morris",
+      "subject": "person-robert-morris",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Robert Morris is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-13"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Robt. Morris",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-geo-clymer",
+      "subject": "person-george-clymer",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "George Clymer is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-13"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Geo. Clymer",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-thos-fitzsimons",
+      "subject": "person-constitution-1787-thos-fitzsimons",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Thos. FitzSimons is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-13"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Thos. FitzSimons",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-jared-ingersoll",
+      "subject": "person-constitution-1787-jared-ingersoll",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Jared Ingersoll is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-13"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Jared Ingersoll",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-james-wilson",
+      "subject": "person-james-wilson",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "James Wilson is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-13"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "James Wilson",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    },
+    {
+      "id": "constitution-1787-gouv-morris",
+      "subject": "person-constitution-1787-gouv-morris",
+      "object": "document-constitution-1787",
+      "predicate": "listed_signature",
+      "text": "Gouv Morris is listed in the signature block of the United States Constitution.",
+      "passage_ids": [
+        "constitution-1787-signatures-13"
+      ],
+      "relationship_type": "listed_signature",
+      "date_label": "September 17, 1787",
+      "date_basis": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary.",
+      "source_signature": "Gouv Morris",
+      "source_heading": "Pennsylvania",
+      "license_scope": "public_domain_historical_text",
+      "note": "Document date in the Convention subscription clause. This edge records a listed delegate signature, not assent to every provision; William Jackson is excluded as secretary."
+    }
+  ],
+  "identity_evidence": [
+    {
+      "signature": "Geo: Read",
+      "label": "George Read",
+      "heading": "George Read, Delaware",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-delaware#read",
+      "capture_sha256": "13328e8fb1e0784ee586c5ed2ff4f6080a517a6923f4c8d5db94c1962c0f4d88",
+      "person_id": "person-george-read"
+    },
+    {
+      "signature": "Roger Sherman",
+      "label": "Roger Sherman",
+      "heading": "Roger Sherman, Connecticut",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-connecticut#sherman",
+      "capture_sha256": "b1cb795cb2a5d0caab73f254efa7a3386e08f9bce073bb388098e2a9635a9d74",
+      "person_id": "person-roger-sherman"
+    },
+    {
+      "signature": "B Franklin",
+      "label": "Benjamin Franklin",
+      "heading": "Benjamin Franklin, Pennsylvania",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-pennsylvania#franklin",
+      "capture_sha256": "e8728b85f6519d55998e51d0c218476596dc34f12d53c1fcf4bb05a3488b71b5",
+      "person_id": "person-benjamin-franklin"
+    },
+    {
+      "signature": "Robt. Morris",
+      "label": "Robert Morris",
+      "heading": "Robert Morris, Pennsylvania",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-pennsylvania#rmorris",
+      "transcription_href": "https://www.archives.gov/founding-docs/founding-fathers-pennsylvania#morris",
+      "locator_note": "The frozen Constitution transcription links to #morris, which is absent from the frozen biography page. The resolved locator #rmorris belongs to its Robert Morris heading. The original upstream href is retained; this correction is editorial, not a change to the historical signature.",
+      "capture_sha256": "e8728b85f6519d55998e51d0c218476596dc34f12d53c1fcf4bb05a3488b71b5",
+      "person_id": "person-robert-morris"
+    },
+    {
+      "signature": "Geo. Clymer",
+      "label": "George Clymer",
+      "heading": "George Clymer, Pennsylvania",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-pennsylvania#clymer",
+      "capture_sha256": "e8728b85f6519d55998e51d0c218476596dc34f12d53c1fcf4bb05a3488b71b5",
+      "person_id": "person-george-clymer"
+    },
+    {
+      "signature": "James Wilson",
+      "label": "James Wilson",
+      "heading": "James Wilson, Pennsylvania",
+      "url": "https://www.archives.gov/founding-docs/founding-fathers-pennsylvania#wilson",
+      "capture_sha256": "e8728b85f6519d55998e51d0c218476596dc34f12d53c1fcf4bb05a3488b71b5",
+      "person_id": "person-james-wilson"
+    }
+  ],
+  "source_capture": {
+    "file": "constitution.raw",
+    "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+    "sha256": "aff2cd6b44123d5d18394c16eb29a3e29f55c82feea91e8e2ab42f85e3cebd06",
+    "bytes": 70555
+  },
+  "input_sha256": "b6c68636ff160ac19edb0ae09dceffae18e505afee99744cb5397fc3a2fd3a0e",
+  "audit": {
+    "corpus_sha256": "a7b10463d56c3e0130bfa7ef40f35bb45e398edce1b59799895174da1895ac5d",
+    "hash_basis": "Canonical JSON excluding audit; sorted keys, compact separators, ASCII escapes.",
+    "source_capture_sha256": "aff2cd6b44123d5d18394c16eb29a3e29f55c82feea91e8e2ab42f85e3cebd06"
+  }
+}

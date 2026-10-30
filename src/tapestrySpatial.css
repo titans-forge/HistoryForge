@@ -1,0 +1,175 @@
+.ts-scene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #080b10;
+}
+.ts-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: grab;
+}
+.ts-canvas:active {
+  cursor: grabbing;
+}
+.ts-canvas:focus-visible {
+  outline: 2px solid #9fdcd4;
+  outline-offset: -3px;
+}
+.ts-labels {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.ts-labels button {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  position: absolute;
+  min-height: 24px;
+  max-height: 44px;
+  padding: 3px 5px;
+  border: 0;
+  border-bottom: 1px solid var(--mark-color);
+  background: #080b10e8;
+  color: #e3e8ed;
+  font:
+    11px/1.3 system-ui,
+    sans-serif;
+  text-align: center;
+  overflow-wrap: anywhere;
+  pointer-events: auto;
+}
+.ts-labels button.selected {
+  color: #fff4ce;
+  border-bottom-width: 2px;
+}
+.ts-tools {
+  position: absolute;
+  top: 2px;
+  right: 12px;
+  display: flex;
+  gap: 4px;
+}
+.ts-tools button,
+.ts-picker header button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid #455352;
+  border-radius: 4px;
+  background: #151b1bef;
+  color: #c4d7d1;
+}
+.ts-tools button:hover,
+.ts-tools button[aria-pressed="true"] {
+  background: #324342;
+  color: #c6f3e9;
+}
+.ts-picker {
+  position: absolute;
+  top: 50px;
+  right: 12px;
+  width: min(355px, calc(100% - 24px));
+  max-height: calc(100% - 58px);
+  overflow: auto;
+  z-index: 5;
+  border: 1px solid #617673;
+  background: #1c2223;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px #0006;
+}
+.ts-picker header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 12px;
+  position: sticky;
+  top: 0;
+  background: #1c2223;
+}
+.ts-picker header strong {
+  font-size: 12px;
+}
+.ts-picker > button {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px;
+  border: 0;
+  border-top: 1px solid #394443;
+  background: none;
+  color: #e7ece8;
+  text-align: left;
+  font:
+    14px/1.5 Georgia,
+    serif;
+}
+.ts-picker > button:hover {
+  background: #293938;
+}
+.ts-picker > button span {
+  display: block;
+  color: #9bddcf;
+  font:
+    11px/1.4 system-ui,
+    sans-serif;
+  margin-bottom: 4px;
+}
+.ts-assertion {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(330px, 90%);
+  text-align: center;
+  pointer-events: none;
+  background: #080b10e8;
+  padding: 4px 8px;
+}
+.ts-assertion strong {
+  color: #e8d6a7;
+  font:
+    16px/1.35 Georgia,
+    serif;
+  display: block;
+  overflow-wrap: anywhere;
+}
+.ts-assertion span {
+  color: #b8c8c2;
+  font-size: 10px;
+  display: block;
+  margin-top: 3px;
+}
+@media (max-width: 760px) {
+  .ts-tools {
+    right: 8px;
+  }
+  .ts-labels button {
+    font-size: 10px;
+  }
+  .ts-assertion {
+    top: 0;
+    padding: 2px;
+  }
+  .ts-assertion strong {
+    font-size: 12px;
+  }
+  .ts-assertion span {
+    display: none;
+  }
+}
+@media (max-height: 540px) and (orientation: landscape) {
+  .ts-assertion strong {
+    font-size: 12px;
+  }
+  .ts-assertion span {
+    display: none;
+  }
+}

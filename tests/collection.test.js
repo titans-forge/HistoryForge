@@ -44,13 +44,13 @@ const canonical = (o) =>
 
 test("bounded counts and identity crossings are explicit", () => {
   assert.deepEqual(graph.counts, {
-    entities: 91,
-    connections: 95,
-    dossiers: 2,
+    entities: 95,
+    connections: 100,
+    dossiers: 3,
   });
-  assert.equal(graph.nodes.filter((n) => n.type === "person").length, 89);
+  assert.equal(graph.nodes.filter((n) => n.type === "person").length, 93);
   assert.equal(graph.nodes.filter((n) => n.appearances.length === 2).length, 6);
-  assert.equal(new Set(graph.nodes.map((n) => n.id)).size, 91);
+  assert.equal(new Set(graph.nodes.map((n) => n.id)).size, 95);
   assert.equal(corpora["declaration-1776"].claims.length, 56);
   assert.equal(corpora["constitution-1787"].claims.length, 39);
 });
@@ -62,7 +62,7 @@ test("every edge binds to its exact source passage and claim", () => {
     assert.equal(bound.claim.object, edge.target);
     for (const { passage } of bound.passages)
       assert.equal(hashText(passage.text), passage.text_sha256);
-    assert.equal(edge.relationship_type, "listed_signature");
+    if (edge.region === "americas") assert.equal(edge.relationship_type, "listed_signature");
     assert.equal(edge.provisional_endpoints.length, 0);
   }
 });
@@ -94,7 +94,7 @@ test("every quote is a literal frozen historical signature block", () => {
   assert.ok(!graph.nodes.some((n) => /William Jackson/.test(n.label)));
 });
 test("dates cannot imply all Declaration names signed on July 4", () => {
-  for (const edge of graph.edges) {
+  for (const edge of graph.edges.filter((e) => e.region === "americas")) {
     assert.equal(edge.date_precision, "document_date_only");
     if (edge.dossier === "declaration-1776")
       assert.match(edge.date_basis, /not an individual signing date/);
@@ -228,7 +228,7 @@ test("layout, searches and selection parsing work on the published graph", () =>
   assert.ok(
     scene.nodes.every((n) => Number.isFinite(n.x) && Number.isFinite(n.y)),
   );
-  assert.equal(visibleTapestry(scene).edges.length, 95);
+  assert.equal(visibleTapestry(scene).edges.length, 100);
   assert.equal(
     searchEntities(scene.nodes, "Franklin")[0].label,
     "Benjamin Franklin",
@@ -240,12 +240,15 @@ test("layout, searches and selection parsing work on the published graph", () =>
   );
   assert.equal(readFocusState("?node=one&node=two", graph).state.node, "");
 });
-test("only four allowlisted public payloads are distributed", () => {
+test("only seven allowlisted public payloads are distributed", () => {
   assert.deepEqual(
     fs.readdirSync(new URL("../public/data", import.meta.url)).sort(),
     [
       "constitution-1787.json",
       "declaration-1776.json",
+      "roman-inputs.json",
+      "roman-review.json",
+      "rome-negotiations-49bce.json",
       "source-inputs.json",
       "tapestry.json",
     ],

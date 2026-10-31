@@ -167,8 +167,7 @@ export default function TapestryFocusGraph({
                   : "48%",
           }}
         >
-          <span>{active.predicate || active.relationship_label}</span>
-          <small>{active.relationship_label}</small>
+          <span>{active.relationship_label || active.predicate?.replaceAll("_", " ")}</span>
         </div>
       )}
       {graph.nodes.map((n) => {

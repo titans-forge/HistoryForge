@@ -4,6 +4,7 @@ from collections import Counter
 import hashlib
 import json
 import re
+import os
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'public/data'
@@ -16,6 +17,52 @@ def slug(value):
 
 def write(name, value):
     (DATA / name).write_text(json.dumps(value, indent=2, ensure_ascii=True) + '\n')
+
+def add_roman_episode(nodes, edges, dossiers, revisions):
+    """A reviewed allowlist, not a directory scan or private corpus import."""
+    def require(condition, message):
+        if not condition:
+            raise ValueError(message)
+    raw = (DATA / 'roman-inputs.json').read_bytes()
+    candidate = os.environ.get('HISTORY_FORGE_REVIEW_CANDIDATE') == '1'
+    if not candidate:
+        receipt = json.loads((DATA / 'roman-review.json').read_text())
+        require(receipt['input_sha256'] == hashlib.sha256(raw).hexdigest(), 'Roman review input drift')
+        require(receipt['status'] == 'accepted_for_local_public_candidate', 'Roman review is not accepted')
+        require(set(receipt['reviews']) == {'textual', 'rights_identity'}, 'Two review scopes are required')
+        require(all(re.fullmatch(r'[a-f0-9]{64}', item['report_sha256']) and item['agent_id'] for item in receipt['reviews'].values()), 'Invalid reviewer reference')
+        require(len({item['agent_id'] for item in receipt['reviews'].values()}) == 2, 'Reviewers must be distinct')
+    pack = json.loads(raw)
+    dossier = pack['dossier']
+    require(dossier['id'] == 'rome-negotiations-49bce', 'Unreviewed dossier')
+    if not candidate:
+        accepted = set.intersection(*(set(item['accepted_claim_ids']) for item in receipt['reviews'].values()))
+        require(set(receipt['accepted_claim_ids']) == accepted == {claim['id'] for claim in pack['claims']}, 'Claims do not match the accepted review intersection')
+    require(len(pack['nodes']) == 4 and len(pack['claims']) == 5, 'Unexpected Roman pack scope')
+    for node in pack['nodes']:
+        require(node['id'] not in nodes, 'A public identity merge requires separate review')
+        nodes[node['id']] = dict(**node, appearances=[dict(dossier=dossier['id'], title=dossier['title'],
+            period=dossier['period'], region=dossier['region'], node_id=node['id'])],
+            regions=[dossier['region']], region=dossier['region'])
+    corpus = {key: value for key, value in pack.items() if key not in ('nodes', 'review_state')}
+    corpus['input_sha256'] = hashlib.sha256(raw).hexdigest()
+    corpus_hash = digest(corpus)
+    corpus['audit'] = dict(corpus_sha256=corpus_hash, hash_basis='Canonical JSON excluding audit; sorted keys, compact separators, ASCII escapes.', source_capture_sha256=pack['source_capture']['sha256'])
+    passages = {p['id']: p for p in corpus['passages']}
+    for claim in corpus['claims']:
+        require(claim['subject'] in nodes and claim['object'] in nodes, 'Unknown endpoint')
+        cited = [passages[key] for key in claim['passage_ids']]
+        require(cited and all(hashlib.sha256(p['text'].encode()).hexdigest() == p['text_sha256'] for p in cited), 'Passage drift or missing citation')
+        edges.append(dict(id='edge-'+claim['id'], source=claim['subject'], target=claim['object'],
+            dossier=dossier['id'], dossier_title=dossier['title'], claim_id=claim['id'],
+            **{key: claim[key] for key in ('text', 'predicate', 'relationship_type', 'relationship_label', 'date_label', 'date_basis', 'date_precision', 'note')},
+            status='source-bound report', review=('Review candidate: independent checks pending.' if candidate else 'Independent textual and rights/identity checks accepted this local candidate; see RELEASE_REVIEW.md. Not institutional certification.'),
+            provisional_endpoints=[], region=dossier['region'], corpus_sha256=corpus_hash,
+            href='/HistoryForge/?dossier='+dossier['id']+'&claim='+claim['id'],
+            citations=[dict(passage_id=p['id'], citation=p['citation'], source=corpus['sources'][0]['title'], url=p['url'], text_sha256=p['text_sha256'], external_locator_kind='book_chapter_and_html_paragraph', license_scope=p['license_scope']) for p in cited]))
+    dossiers.append(dossier)
+    revisions[dossier['id']] = corpus_hash
+    write(dossier['id']+'.json', corpus)
 
 def build():
     inputs = json.loads((DATA / 'source-inputs.json').read_text())
@@ -98,17 +145,19 @@ def build():
                     url=url, text_sha256=passage['text_sha256'], external_locator_kind='signature_block',
                     license_scope=passage['license_scope'])]))
         write(dossier + '.json', corpus)
+    assert len(edges) == 95 and len(nodes) == 91
+    add_roman_episode(nodes, edges, dossiers, revisions)
     count = Counter(endpoint for edge in edges for endpoint in (edge['source'], edge['target']))
     for node in nodes.values(): node['connection_count'] = count[node['id']]
     tapestry = dict(version=1, nodes=list(nodes.values()), edges=edges, dossiers=dossiers,
-        regions=[dict(id='americas', label='Americas', color='#80aff4')], corpus_revisions=revisions,
+        regions=[dict(id='americas', label='Americas', color='#80aff4'), dict(id='mediterranean', label='Mediterranean', color='#e2c66f')], corpus_revisions=revisions,
         counts=dict(entities=len(nodes), connections=len(edges), dossiers=len(dossiers)),
         geography_basis='Regional document context, not nationality or birthplace.',
-        scope='Bounded public signatory pilot; not the full private corpus. No inferred personal-contact edges.')
-    assert len(edges) == 95 and len(nodes) == 91
+        scope='Bounded public episodes; not the full private corpus. Each connection retains its source-specific meaning.')
+    assert len(edges) == 100 and len(nodes) == 95
     assert len([node for node in nodes.values() if len(node['appearances']) == 2]) == 6
     tapestry['revision'] = digest(tapestry)
     write('tapestry.json', tapestry)
-    print(f"Built {len(nodes)} entity records, {len(edges)} source-bound connections, two documents.")
+    print(f"Built {len(nodes)} entity records, {len(edges)} source-bound connections, {len(dossiers)} source packs.")
 
 if __name__ == '__main__': build()

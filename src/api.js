@@ -1,4 +1,4 @@
-const allowed = new Set(["declaration-1776", "constitution-1787"]);
+const allowed = new Set(["declaration-1776", "constitution-1787", "rome-negotiations-49bce"]);
 export const base = import.meta.env?.BASE_URL || "/HistoryForge/";
 export function dataPath(path, body) {
   if (body !== undefined)

@@ -1,0 +1,36 @@
+{
+  "status": "accepted_for_local_public_candidate",
+  "input_sha256": "318278a2e1f4a3c02cd840817020c7c1c9d9c91e530b2ca97002034927a443fd",
+  "reviewed_manifest_sha256": "f898cf88cb40691907d7a905d5fb5b5e4c141d62fef417233facc5b6db161913",
+  "accepted_claim_ids": [
+    "rome-49-lucius-message",
+    "rome-49-roscius-message",
+    "rome-49-lucius-request",
+    "rome-49-roscius-request",
+    "rome-49-disbandment-proposal"
+  ],
+  "reviews": {
+    "textual": {
+      "agent_id": "01a18f8b-1865-7661-94e9-81317c7526c1",
+      "report_sha256": "04d86447271ad432d3d1aff4e5c9a6fe63967033b74691f4098b30b0bdecba48",
+      "accepted_claim_ids": [
+        "rome-49-lucius-message",
+        "rome-49-roscius-message",
+        "rome-49-lucius-request",
+        "rome-49-roscius-request",
+        "rome-49-disbandment-proposal"
+      ]
+    },
+    "rights_identity": {
+      "agent_id": "01a18f8b-1886-7021-92ab-cd4b63ba35de",
+      "report_sha256": "91bbce443590383744cce10ae6934ae18424820d392119a4d53fd9fd5dd48612",
+      "accepted_claim_ids": [
+        "rome-49-lucius-message",
+        "rome-49-roscius-message",
+        "rome-49-lucius-request",
+        "rome-49-roscius-request",
+        "rome-49-disbandment-proposal"
+      ]
+    }
+  }
+}

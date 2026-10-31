@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { ArrowLeft, Download, ExternalLink, Network } from "lucide-react";
 import TapestryStudio from "./components/TapestryStudio.jsx";
+import SourceNotices from "./components/SourceNotices.jsx";
 import { request, base } from "./api.js";
 import { tapestryReturnHref } from "./tapestryLinks.js";
 import { evidenceRecord, evidenceMarkdown, download } from "./exports.js";
@@ -87,6 +88,7 @@ function Evidence() {
             <dd>{record.relationship.status}</dd>
           </dl>
           <p className="qualification">{record.qualification}</p>
+          <SourceNotices sources={[...new Map(record.evidence.map(({ source }) => [source.id, source])).values()]} />
           {record.evidence.map(({ passage, source }) => (
             <section key={passage.id}>
               <h2>{source.title}</h2>
@@ -98,7 +100,7 @@ function Evidence() {
               <p>{source.dependence}</p>
               <p>{passage.license_credit}</p>
               <a href={passage.url} target="_blank" rel="noreferrer">
-                National Archives transcription <ExternalLink size={15} />
+                {source.link_label || "National Archives transcription"} <ExternalLink size={15} />
               </a>
               <details>
                 <summary>Source binding</summary>
@@ -116,7 +118,7 @@ function Evidence() {
             <section>
               <h2>Identity evidence</h2>
               {record.identity_evidence.map((item) => (
-                <p key={item.signature}>
+                item.statement ? <p key={item.person_id}>{item.label}: {item.statement} <a href={item.url}>{item.citation}</a></p> : <p key={item.signature}>
                   {item.signature} is mapped to {item.label} using the
                   transcription and <a href={item.url}>{item.heading}</a>. This
                   is a later biographical identification, not an additional
@@ -151,17 +153,25 @@ function Release() {
         <ArrowLeft size={18} />
         Living Tapestry
       </a>
-      <p className="eyebrow">History Forge / Public Edition 0.1</p>
-      <h1>Signatures, 1776 and 1787</h1>
+      <p className="eyebrow">History Forge / Public Release Candidate</p>
+      <h1>Rome and the American Founding</h1>
       <p>
-        This bounded public pilot contains 95 signature-list connections to two
+        This bounded public edition contains five source-bound claims concerning reported Roman negotiations
+        and 95 signature-list connections to two
         historical documents. It is not the full History Forge research corpus.
         Six source-supported identity mappings connect the two lists; other
         labels retain their source spelling or abbreviation.
       </p>
       <h2>What The Connections Mean</h2>
       <p>
-        Each edge records a name listed in a National Archives transcription. It
+        The Roman episode follows Caesar's Civil War I.8-9: reported messages,
+        delivery requests and a proposed disbandment in 49 BCE. Caesar is a
+        participant and partisan narrator, not an independent witness to his
+        opponents' intentions. A proposal is not an agreement or an outcome.
+        The young Lucius Caesar and Roscius remain distinct source-local records.
+      </p>
+      <p>
+        Each American edge records a name listed in a National Archives transcription. It
         does not imply a meeting, co-authorship, friendship, approval of every
         provision, or an individual signing date of July 4, 1776. William
         Jackson's attestation is not included among the 39 Constitution delegate
@@ -176,15 +186,19 @@ function Release() {
       </p>
       <h2>Source And Rights Scope</h2>
       <p>
-        Only historical signature text is reproduced from the official
-        transcriptions, not modern photographs, seals, portraits, interpretive
+        Historical signature text and three identified paragraphs of an old
+        Caesar translation are reproduced, not modern photographs, seals, portraits, interpretive
         essays or full website captures. Frozen raw captures remain outside this
         repository; their SHA-256 hashes and exact source URLs are in the public
         source manifest.
       </p>
       <p>
         Original application code, structured data and annotations are licensed
-        under Apache-2.0. Historical signature text is public domain;
+        under Apache-2.0. Historical signature text is public domain. The
+        MacDevitt translation (Everyman no. 702, edition first published 1915,
+        reprinted 1923 and 1929) is listed as public domain in the USA; its
+        Project Gutenberg reuse notice and full terms accompany displayed and
+        exported excerpts. This is not worldwide rights clearance;
         third-party libraries retain their licenses. National Archives credit is
         attribution, not endorsement.
       </p>
@@ -230,7 +244,7 @@ function App() {
   const params = new URLSearchParams(location.search);
   if (params.has("release")) return <Release />;
   if (params.has("claim") || params.has("dossier")) return <Evidence />;
-  if (!params.has("space")) {
+  if (params.size === 0) {
     params.set("space", "3d");
     params.set("tapestry_v2", "1");
     history.replaceState(null, "", base + "?" + params);

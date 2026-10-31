@@ -1961,6 +1961,90 @@
       ],
       "region": "americas",
       "connection_count": 1
+    },
+    {
+      "id": "person-rome-caesar",
+      "label": "Julius Caesar",
+      "type": "person",
+      "identity_status": "source_bound",
+      "aliases": [],
+      "appearances": [
+        {
+          "dossier": "rome-negotiations-49bce",
+          "title": "Caesar and Pompey: reported negotiations",
+          "period": "49 BCE",
+          "region": "mediterranean",
+          "node_id": "person-rome-caesar"
+        }
+      ],
+      "regions": [
+        "mediterranean"
+      ],
+      "region": "mediterranean",
+      "connection_count": 5
+    },
+    {
+      "id": "person-rome-pompey",
+      "label": "Pompey",
+      "type": "person",
+      "identity_status": "source_bound",
+      "aliases": [],
+      "appearances": [
+        {
+          "dossier": "rome-negotiations-49bce",
+          "title": "Caesar and Pompey: reported negotiations",
+          "period": "49 BCE",
+          "region": "mediterranean",
+          "node_id": "person-rome-pompey"
+        }
+      ],
+      "regions": [
+        "mediterranean"
+      ],
+      "region": "mediterranean",
+      "connection_count": 1
+    },
+    {
+      "id": "person-rome-lucius-caesar-envoy",
+      "label": "Lucius Caesar (young envoy)",
+      "type": "person",
+      "identity_status": "source_bound",
+      "aliases": [],
+      "appearances": [
+        {
+          "dossier": "rome-negotiations-49bce",
+          "title": "Caesar and Pompey: reported negotiations",
+          "period": "49 BCE",
+          "region": "mediterranean",
+          "node_id": "person-rome-lucius-caesar-envoy"
+        }
+      ],
+      "regions": [
+        "mediterranean"
+      ],
+      "region": "mediterranean",
+      "connection_count": 2
+    },
+    {
+      "id": "person-rome-roscius-praetor",
+      "label": "Roscius (praetor)",
+      "type": "person",
+      "identity_status": "source_bound",
+      "aliases": [],
+      "appearances": [
+        {
+          "dossier": "rome-negotiations-49bce",
+          "title": "Caesar and Pompey: reported negotiations",
+          "period": "49 BCE",
+          "region": "mediterranean",
+          "node_id": "person-rome-roscius-praetor"
+        }
+      ],
+      "regions": [
+        "mediterranean"
+      ],
+      "region": "mediterranean",
+      "connection_count": 2
     }
   ],
   "edges": [
@@ -5098,6 +5182,198 @@
           "license_scope": "public_domain_historical_text"
         }
       ]
+    },
+    {
+      "id": "edge-rome-49-lucius-message",
+      "source": "person-rome-lucius-caesar-envoy",
+      "target": "person-rome-caesar",
+      "dossier": "rome-negotiations-49bce",
+      "dossier_title": "Caesar and Pompey: reported negotiations",
+      "claim_id": "rome-49-lucius-message",
+      "text": "Caesar reports that the young Lucius Caesar conveyed a private message from Pompey to him.",
+      "predicate": "reported_message",
+      "relationship_type": "reported_message",
+      "relationship_label": "Reported message",
+      "date_label": "49 BCE (narrative context)",
+      "date_basis": "49 BCE is editorial dating from the opening Civil War narrative and the catalogue's 49-48 BCE war scope; these passages assign no calendar day. It is not a date for the composition of Caesar's account.",
+      "date_precision": "year_context",
+      "note": "Caesar's retrospective account of his own conflict, not independent corroboration or a verbatim diplomatic archive. Messages are reported speech, delivery requests are requests, and proposed disbandment is not an executed agreement. Lucius Caesar is the young envoy of I.8, not Julius Caesar or the envoy's father. Roscius remains the source-local praetor, with no unreviewed biographical merge.",
+      "status": "source-bound report",
+      "review": "Independent textual and rights/identity checks accepted this local candidate; see RELEASE_REVIEW.md. Not institutional certification.",
+      "provisional_endpoints": [],
+      "region": "mediterranean",
+      "corpus_sha256": "d1b7323dbd5805f1b710d2a13b49f001ba93960382ab5b5602f3936c1b7ecffa",
+      "href": "/HistoryForge/?dossier=rome-negotiations-49bce&claim=rome-49-lucius-message",
+      "citations": [
+        {
+          "passage_id": "rome-49-id00487",
+          "citation": "Caesar, Civil War I.8 (MacDevitt translation, Everyman no. 702).",
+          "source": "Caesar, The Civil War I.8-9",
+          "url": "https://www.gutenberg.org/cache/epub/10657/pg10657.html#id00487",
+          "text_sha256": "052d4a87e900a4d0c21fb17769c6cf3aca3411ee048ad0b0c1f1786408d71849",
+          "external_locator_kind": "book_chapter_and_html_paragraph",
+          "license_scope": "public_domain_us_with_gutenberg_notice"
+        }
+      ]
+    },
+    {
+      "id": "edge-rome-49-roscius-message",
+      "source": "person-rome-roscius-praetor",
+      "target": "person-rome-caesar",
+      "dossier": "rome-negotiations-49bce",
+      "dossier_title": "Caesar and Pompey: reported negotiations",
+      "claim_id": "rome-49-roscius-message",
+      "text": "Caesar reports that Roscius conferred with him on the same subject and declared that Pompey had empowered him to do so.",
+      "predicate": "reported_message",
+      "relationship_type": "reported_message",
+      "relationship_label": "Reported message",
+      "date_label": "49 BCE (narrative context)",
+      "date_basis": "49 BCE is editorial dating from the opening Civil War narrative and the catalogue's 49-48 BCE war scope; these passages assign no calendar day. It is not a date for the composition of Caesar's account.",
+      "date_precision": "year_context",
+      "note": "Caesar's retrospective account of his own conflict, not independent corroboration or a verbatim diplomatic archive. Messages are reported speech, delivery requests are requests, and proposed disbandment is not an executed agreement. Lucius Caesar is the young envoy of I.8, not Julius Caesar or the envoy's father. Roscius remains the source-local praetor, with no unreviewed biographical merge.",
+      "status": "source-bound report",
+      "review": "Independent textual and rights/identity checks accepted this local candidate; see RELEASE_REVIEW.md. Not institutional certification.",
+      "provisional_endpoints": [],
+      "region": "mediterranean",
+      "corpus_sha256": "d1b7323dbd5805f1b710d2a13b49f001ba93960382ab5b5602f3936c1b7ecffa",
+      "href": "/HistoryForge/?dossier=rome-negotiations-49bce&claim=rome-49-roscius-message",
+      "citations": [
+        {
+          "passage_id": "rome-49-id00487",
+          "citation": "Caesar, Civil War I.8 (MacDevitt translation, Everyman no. 702).",
+          "source": "Caesar, The Civil War I.8-9",
+          "url": "https://www.gutenberg.org/cache/epub/10657/pg10657.html#id00487",
+          "text_sha256": "052d4a87e900a4d0c21fb17769c6cf3aca3411ee048ad0b0c1f1786408d71849",
+          "external_locator_kind": "book_chapter_and_html_paragraph",
+          "license_scope": "public_domain_us_with_gutenberg_notice"
+        }
+      ]
+    },
+    {
+      "id": "edge-rome-49-lucius-request",
+      "source": "person-rome-caesar",
+      "target": "person-rome-lucius-caesar-envoy",
+      "dossier": "rome-negotiations-49bce",
+      "dossier_title": "Caesar and Pompey: reported negotiations",
+      "claim_id": "rome-49-lucius-request",
+      "text": "Caesar reports asking the young Lucius Caesar to convey his demands to Pompey.",
+      "predicate": "requested_delivery",
+      "relationship_type": "requested_delivery",
+      "relationship_label": "Requested delivery",
+      "date_label": "49 BCE (narrative context)",
+      "date_basis": "49 BCE is editorial dating from the opening Civil War narrative and the catalogue's 49-48 BCE war scope; these passages assign no calendar day. It is not a date for the composition of Caesar's account.",
+      "date_precision": "year_context",
+      "note": "Caesar's retrospective account of his own conflict, not independent corroboration or a verbatim diplomatic archive. Messages are reported speech, delivery requests are requests, and proposed disbandment is not an executed agreement. Lucius Caesar is the young envoy of I.8, not Julius Caesar or the envoy's father. Roscius remains the source-local praetor, with no unreviewed biographical merge.",
+      "status": "source-bound report",
+      "review": "Independent textual and rights/identity checks accepted this local candidate; see RELEASE_REVIEW.md. Not institutional certification.",
+      "provisional_endpoints": [],
+      "region": "mediterranean",
+      "corpus_sha256": "d1b7323dbd5805f1b710d2a13b49f001ba93960382ab5b5602f3936c1b7ecffa",
+      "href": "/HistoryForge/?dossier=rome-negotiations-49bce&claim=rome-49-lucius-request",
+      "citations": [
+        {
+          "passage_id": "rome-49-id00487",
+          "citation": "Caesar, Civil War I.8 (MacDevitt translation, Everyman no. 702).",
+          "source": "Caesar, The Civil War I.8-9",
+          "url": "https://www.gutenberg.org/cache/epub/10657/pg10657.html#id00487",
+          "text_sha256": "052d4a87e900a4d0c21fb17769c6cf3aca3411ee048ad0b0c1f1786408d71849",
+          "external_locator_kind": "book_chapter_and_html_paragraph",
+          "license_scope": "public_domain_us_with_gutenberg_notice"
+        },
+        {
+          "passage_id": "rome-49-id00488",
+          "citation": "Caesar, Civil War I.9, opening paragraph (MacDevitt translation, Everyman no. 702).",
+          "source": "Caesar, The Civil War I.8-9",
+          "url": "https://www.gutenberg.org/cache/epub/10657/pg10657.html#id00488",
+          "text_sha256": "7f1667e4826ec8811db5de776f3893961f3a155880a16a35fefa22cd1879bc2b",
+          "external_locator_kind": "book_chapter_and_html_paragraph",
+          "license_scope": "public_domain_us_with_gutenberg_notice"
+        }
+      ]
+    },
+    {
+      "id": "edge-rome-49-roscius-request",
+      "source": "person-rome-caesar",
+      "target": "person-rome-roscius-praetor",
+      "dossier": "rome-negotiations-49bce",
+      "dossier_title": "Caesar and Pompey: reported negotiations",
+      "claim_id": "rome-49-roscius-request",
+      "text": "Caesar reports asking Roscius to convey his demands to Pompey.",
+      "predicate": "requested_delivery",
+      "relationship_type": "requested_delivery",
+      "relationship_label": "Requested delivery",
+      "date_label": "49 BCE (narrative context)",
+      "date_basis": "49 BCE is editorial dating from the opening Civil War narrative and the catalogue's 49-48 BCE war scope; these passages assign no calendar day. It is not a date for the composition of Caesar's account.",
+      "date_precision": "year_context",
+      "note": "Caesar's retrospective account of his own conflict, not independent corroboration or a verbatim diplomatic archive. Messages are reported speech, delivery requests are requests, and proposed disbandment is not an executed agreement. Lucius Caesar is the young envoy of I.8, not Julius Caesar or the envoy's father. Roscius remains the source-local praetor, with no unreviewed biographical merge.",
+      "status": "source-bound report",
+      "review": "Independent textual and rights/identity checks accepted this local candidate; see RELEASE_REVIEW.md. Not institutional certification.",
+      "provisional_endpoints": [],
+      "region": "mediterranean",
+      "corpus_sha256": "d1b7323dbd5805f1b710d2a13b49f001ba93960382ab5b5602f3936c1b7ecffa",
+      "href": "/HistoryForge/?dossier=rome-negotiations-49bce&claim=rome-49-roscius-request",
+      "citations": [
+        {
+          "passage_id": "rome-49-id00487",
+          "citation": "Caesar, Civil War I.8 (MacDevitt translation, Everyman no. 702).",
+          "source": "Caesar, The Civil War I.8-9",
+          "url": "https://www.gutenberg.org/cache/epub/10657/pg10657.html#id00487",
+          "text_sha256": "052d4a87e900a4d0c21fb17769c6cf3aca3411ee048ad0b0c1f1786408d71849",
+          "external_locator_kind": "book_chapter_and_html_paragraph",
+          "license_scope": "public_domain_us_with_gutenberg_notice"
+        },
+        {
+          "passage_id": "rome-49-id00488",
+          "citation": "Caesar, Civil War I.9, opening paragraph (MacDevitt translation, Everyman no. 702).",
+          "source": "Caesar, The Civil War I.8-9",
+          "url": "https://www.gutenberg.org/cache/epub/10657/pg10657.html#id00488",
+          "text_sha256": "7f1667e4826ec8811db5de776f3893961f3a155880a16a35fefa22cd1879bc2b",
+          "external_locator_kind": "book_chapter_and_html_paragraph",
+          "license_scope": "public_domain_us_with_gutenberg_notice"
+        }
+      ]
+    },
+    {
+      "id": "edge-rome-49-disbandment-proposal",
+      "source": "person-rome-caesar",
+      "target": "person-rome-pompey",
+      "dossier": "rome-negotiations-49bce",
+      "dossier_title": "Caesar and Pompey: reported negotiations",
+      "claim_id": "rome-49-disbandment-proposal",
+      "text": "Caesar's account presents his proposal that Pompey go to his province and that both commanders disband their armies.",
+      "predicate": "proposed_disbandment",
+      "relationship_type": "proposed_disbandment",
+      "relationship_label": "Proposed disbandment",
+      "date_label": "49 BCE (narrative context)",
+      "date_basis": "49 BCE is editorial dating from the opening Civil War narrative and the catalogue's 49-48 BCE war scope; these passages assign no calendar day. It is not a date for the composition of Caesar's account.",
+      "date_precision": "year_context",
+      "note": "Caesar's retrospective account of his own conflict, not independent corroboration or a verbatim diplomatic archive. Messages are reported speech, delivery requests are requests, and proposed disbandment is not an executed agreement. Lucius Caesar is the young envoy of I.8, not Julius Caesar or the envoy's father. Roscius remains the source-local praetor, with no unreviewed biographical merge.",
+      "status": "source-bound report",
+      "review": "Independent textual and rights/identity checks accepted this local candidate; see RELEASE_REVIEW.md. Not institutional certification.",
+      "provisional_endpoints": [],
+      "region": "mediterranean",
+      "corpus_sha256": "d1b7323dbd5805f1b710d2a13b49f001ba93960382ab5b5602f3936c1b7ecffa",
+      "href": "/HistoryForge/?dossier=rome-negotiations-49bce&claim=rome-49-disbandment-proposal",
+      "citations": [
+        {
+          "passage_id": "rome-49-id00488",
+          "citation": "Caesar, Civil War I.9, opening paragraph (MacDevitt translation, Everyman no. 702).",
+          "source": "Caesar, The Civil War I.8-9",
+          "url": "https://www.gutenberg.org/cache/epub/10657/pg10657.html#id00488",
+          "text_sha256": "7f1667e4826ec8811db5de776f3893961f3a155880a16a35fefa22cd1879bc2b",
+          "external_locator_kind": "book_chapter_and_html_paragraph",
+          "license_scope": "public_domain_us_with_gutenberg_notice"
+        },
+        {
+          "passage_id": "rome-49-id00489",
+          "citation": "Caesar, Civil War I.9, terms paragraph (MacDevitt translation, Everyman no. 702).",
+          "source": "Caesar, The Civil War I.8-9",
+          "url": "https://www.gutenberg.org/cache/epub/10657/pg10657.html#id00489",
+          "text_sha256": "bce17623f2138dbecf0ddbdf01cc67b1fc98caa4951033d371c660a19e9336ae",
+          "external_locator_kind": "book_chapter_and_html_paragraph",
+          "license_scope": "public_domain_us_with_gutenberg_notice"
+        }
+      ]
     }
   ],
   "dossiers": [
@@ -5112,6 +5388,12 @@
       "title": "United States Constitution",
       "period": "1787",
       "region": "americas"
+    },
+    {
+      "id": "rome-negotiations-49bce",
+      "title": "Caesar and Pompey: reported negotiations",
+      "period": "49 BCE",
+      "region": "mediterranean"
     }
   ],
   "regions": [
@@ -5119,18 +5401,24 @@
       "id": "americas",
       "label": "Americas",
       "color": "#80aff4"
+    },
+    {
+      "id": "mediterranean",
+      "label": "Mediterranean",
+      "color": "#e2c66f"
     }
   ],
   "corpus_revisions": {
     "declaration-1776": "f077031a02fb5e92547cd641f4153cb09960586506bf2e584d64708ad47b967d",
-    "constitution-1787": "a7b10463d56c3e0130bfa7ef40f35bb45e398edce1b59799895174da1895ac5d"
+    "constitution-1787": "a7b10463d56c3e0130bfa7ef40f35bb45e398edce1b59799895174da1895ac5d",
+    "rome-negotiations-49bce": "d1b7323dbd5805f1b710d2a13b49f001ba93960382ab5b5602f3936c1b7ecffa"
   },
   "counts": {
-    "entities": 91,
-    "connections": 95,
-    "dossiers": 2
+    "entities": 95,
+    "connections": 100,
+    "dossiers": 3
   },
   "geography_basis": "Regional document context, not nationality or birthplace.",
-  "scope": "Bounded public signatory pilot; not the full private corpus. No inferred personal-contact edges.",
-  "revision": "97adde06a5984d92696a029f96399e58199a60ff03ea14e815f24160f1d0bd90"
+  "scope": "Bounded public episodes; not the full private corpus. Each connection retains its source-specific meaning.",
+  "revision": "6476e304aa139f852f0f556ac59546c750d2f870718a983a139e88202c063494"
 }

@@ -43,6 +43,7 @@ import SourceNotices from "./SourceNotices";
 import TapestryFocusGraph, { EntityGlyph } from "./TapestryFocusGraph";
 import "../tapestryFocus.css";
 import { spatialPositions } from "../tapestrySpatial.js";
+import { evidenceLabel } from "../evidenceLabels.js";
 
 const TapestrySpatial = lazy(() => import("./TapestrySpatial"));
 
@@ -126,7 +127,7 @@ function InlinePassages({ edge }) {
       />
       {result.claim.license_scope && (
         <p className="tf-scope">
-          {result.claim.license_credit} {result.claim.license_scope}
+          {result.claim.license_credit} {evidenceLabel(result.claim.license_scope)}
         </p>
       )}
       {result.passages.map(({ passage: p, source: s }) => (
@@ -157,7 +158,7 @@ function InlinePassages({ edge }) {
           )}
           {(p.license_credit || p.license_scope) && (
             <p className="tf-scope">
-              {p.license_credit} {p.license_scope}
+              {p.license_credit} {evidenceLabel(p.license_scope)}
             </p>
           )}
           <a
@@ -191,7 +192,7 @@ export default function TapestryStudio() {
     ),
     [notice, setNotice] = useState("");
   const [panelOpen, setPanelOpen] = useState(
-      () => !!readFocusState(location.search).state.node,
+      () => !!readFocusState(location.search).state.node || matchMedia("(min-width: 761px)").matches,
     ),
     [passagesOpen, setPassagesOpen] = useState(false);
   const [limit, setLimit] = useState(24),
@@ -217,7 +218,7 @@ export default function TapestryStudio() {
         setScene(graph);
         setState(checked.state);
         setNotice(checked.notice);
-        setPanelOpen(!!(checked.state.node || checked.state.query));
+        setPanelOpen(!!(checked.state.node || checked.state.query) || matchMedia("(min-width: 761px)").matches);
         history.replaceState(null, "", tapestryHref(checked.state));
       })
       .catch((failure) => {
@@ -309,6 +310,13 @@ export default function TapestryStudio() {
       tapestryHref(next.state),
     );
   }
+  const sharedEntities = useMemo(
+    () => visible?.nodes.filter((entity) =>
+      entity.identity_status === "confirmed_mapping" &&
+      new Set(entity.appearances.map((appearance) => appearance.dossier)).size > 1
+    ).sort((a, b) => a.label.localeCompare(b.label)) || [],
+    [visible],
+  );
   function chooseNode(id) {
     navigate({ node: id, edge: "", lens: "focus" });
     setPanelOpen(true);
@@ -351,7 +359,7 @@ export default function TapestryStudio() {
         </nav>
       </header>
       <p className="public-scope">
-        Public pilot / 1776 and 1787 signature lists / not the full research
+        Public episodes / Rome and the American Founding / not the full research
         corpus
       </p>
       <div className="tf-toolbar">
@@ -386,6 +394,8 @@ export default function TapestryStudio() {
         <div className="tf-mode" aria-label="Network view">
           <button
             aria-pressed={!focused}
+            aria-label="Overview"
+            title="Overview"
             onClick={() => navigate({ lens: "overview" })}
           >
             <Network size={16} />
@@ -393,6 +403,8 @@ export default function TapestryStudio() {
           </button>
           <button
             aria-pressed={focused}
+            aria-label="Focus"
+            title="Focus"
             disabled={!node}
             onClick={() => navigate({ lens: "focus" })}
           >
@@ -470,7 +482,7 @@ export default function TapestryStudio() {
               ))}
           </div>
           <details className="tf-filters">
-            <summary>
+            <summary aria-label="Relationships" title="Relationships">
               <SlidersHorizontal size={16} />
               <span>Relationships</span>
               {state.relation !== "all" && <Check size={13} />}
@@ -538,14 +550,14 @@ export default function TapestryStudio() {
                     ? active
                       ? active.dossier_title
                       : node.label.replaceAll("|", " ")
-                    : "Signatures, 1776 and 1787"}
+                    : "Rome and the American Founding"}
                 </h2>
                 <p>
                   {focused
                     ? active
-                      ? active.date_label
+                      ? (active.date_precision === "document_date_only" ? "Document date / " : "") + active.date_label
                       : `${connections.length} sourced connections`
-                    : `${data.counts.dossiers} documents / ${data.counts.entities} public entity records`}
+                    : `${data.counts.dossiers} source packs / ${data.counts.entities} public entity records`}
                 </p>
               </div>
               <div className="tf-graph-surface">
@@ -763,11 +775,11 @@ export default function TapestryStudio() {
                 <div className="tf-relationship">
                   {active.relationship_label}
                 </div>
-                <h3>{active.text}</h3>
                 <div className="tf-date">
                   <strong>{active.date_label || "Date not supplied"}</strong>
                   {active.date_basis && <p>{active.date_basis}</p>}
                 </div>
+                <h3>{active.text}</h3>
                 <button
                   className="tf-read"
                   aria-expanded={passagesOpen}
@@ -783,7 +795,7 @@ export default function TapestryStudio() {
                     <InlinePassages key={active.id} edge={active} />
                   </div>
                 )}
-                {active.note && (
+                {active.note && active.note !== active.date_basis && (
                   <p className="tf-qualification">{active.note}</p>
                 )}
                 <a
@@ -806,7 +818,7 @@ export default function TapestryStudio() {
                           {c.external_locator_kind.replaceAll("_", " ")}
                         </span>
                       )}
-                      {c.license_scope && <span>{c.license_scope}</span>}
+                      {c.license_scope && <span>{evidenceLabel(c.license_scope)}</span>}
                     </p>
                   ))}
                   <p>{active.review}</p>
@@ -857,7 +869,7 @@ export default function TapestryStudio() {
                           <ArrowRight size={14} />
                         </span>
                         <strong>{e.text}</strong>
-                        <small>{e.date_label}</small>
+                        <small>{e.date_precision === "document_date_only" ? "Document date / " : ""}{e.date_label}</small>
                       </button>
                     </li>
                   ))}
@@ -873,6 +885,34 @@ export default function TapestryStudio() {
               </div>
             ) : (
               <div className="tf-entities">
+                {!state.query && (
+                  <section className="public-shared" aria-label="Historical episodes">
+                    <h3>Historical episodes</h3>
+                    <ul>{data.dossiers.map((dossier) => {
+                      const entry = scene.nodes.find((item) => item.appearances.some((a) => a.dossier === dossier.id) && item.type === "document") ||
+                        scene.nodes.filter((item) => item.appearances.some((a) => a.dossier === dossier.id)).sort((a, b) => b.connection_count - a.connection_count || a.id.localeCompare(b.id))[0];
+                      return entry && <li key={dossier.id}><button onClick={() => {
+                        navigate({ node: entry.id, edge: "", lens: "focus", region: "all", relation: "all", query: "" });
+                        setPanelOpen(true);
+                      }}><span>{dossier.title}<small>{dossier.period}</small></span><ArrowRight size={15} /></button></li>;
+                    })}</ul>
+                  </section>
+                )}
+                {!state.query && sharedEntities.length > 0 && (
+                  <section className="public-shared" aria-label="Across both documents">
+                    <h3>Across both documents</h3>
+                    <ul>
+                      {sharedEntities.map((entity) => (
+                        <li key={entity.id}>
+                          <button onClick={() => chooseNode(entity.id)}>
+                            <span>{entity.label.replaceAll("|", " ")}</span>
+                            <ArrowRight size={15} />
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                )}
                 <p>
                   {matches.length} {state.query ? "matching" : "visible"}{" "}
                   entities

@@ -1,5 +1,30 @@
 # Release Review
 
+## Roman Expansion Candidate
+
+Separate independent textual and rights/identity reviewers accepted all five
+Caesar I.8-9 claims, the actual app content and all ten JSON/Markdown exports
+in frozen v2. The input SHA-256 is
+`318278a2e1f4a3c02cd840817020c7c1c9d9c91e530b2ca97002034927a443fd`.
+`public/data/roman-review.json` binds this input and the accepted intersection
+to two distinct reviewers and their retained report hashes. Full reports and
+raw captures remain outside the public repository. This is AI-assisted review,
+not institutional certification, legal advice or worldwide rights clearance.
+
+The first expanded-license phone check failed with horizontal overflow; v2
+repaired wrapping and passed the full 20-case desktop/phone DPR 1/2 matrix.
+All 22 Node tests pass. Software-GPU warnings and native-device/Safari limits
+remain. Finalization clarifies that five claims concern one negotiation episode,
+records acceptance, and makes the review gate survive Python optimization.
+It changes no historical input, quote, identity, date or claim wording.
+
+The candidate adds four source-bound person records and five typed reported
+connections, for 95 entity records, 100 connections and three source packs.
+The existing American corpus payloads are preserved. The historical review
+below describes only the earlier American pilot, not the Roman expansion.
+
+## Retained American Pilot Review
+
 **Status: bounded local release review passed; public hosting not yet verified.**
 
 Two independent AI-assisted source reviewers inspected the original frozen

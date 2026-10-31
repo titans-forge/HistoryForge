@@ -18,6 +18,7 @@ import {
 } from "../tapestrySpatial.js";
 import { celestialAtmosphere, celestialSurface } from "../tapestryCelestial.js";
 import "../tapestrySpatial.css";
+import { relationshipLabel } from "../evidenceLabels.js";
 
 function Button({ label, icon: Icon, ...props }) {
   return (
@@ -326,14 +327,17 @@ export default forwardRef(function TapestrySpatial(
         const dossier = node.appearances[0]?.dossier;
         if (!focused && dossiers.has(dossier)) continue;
         const text = node.label.replaceAll("|", " "),
-          w = Math.min(170, Math.max(80, text.length * 7.2));
+          w = Math.min(active ? (width - 24) / 2 : 170, 170, Math.max(80, text.length * 7.2));
         const h = text.length > 22 ? 40 : 24;
-        const x = Math.max(8, Math.min(width - w - 8, node.x - w / 2));
+        const x = active && width < 560 && active.source !== active.target
+          ? node.id === active.source ? 8 : width - w - 8
+          : Math.max(8, Math.min(width - w - 8, node.x - w / 2));
         const bodyPixels =
           (bodyUnit / spanPerPixel) *
           (active ? 1 : celestialScale(node.connection_count));
-        const y = node.y + bodyPixels * camera.zoom + 7;
-        if (node.x < 8 || node.x > width - 8 || y < 44 || y + h > height - 8)
+        const belowBody = node.y + bodyPixels * camera.zoom + 7;
+        const y = active ? Math.min(height - h - 8, Math.max(32, belowBody)) : belowBody;
+        if (node.x < 8 || node.x > width - 8 || y < (active ? 28 : 44) || y + h > height - 8)
           continue;
         if (
           occupied.some(
@@ -604,8 +608,7 @@ export default forwardRef(function TapestrySpatial(
       </div>
       {active ? (
         <div className="ts-assertion">
-          <strong>{active.predicate || active.relationship_label}</strong>
-          <span>{active.relationship_label}</span>
+          <strong>{relationshipLabel(active)}</strong>
         </div>
       ) : (
         <div className="ts-tools" aria-label="Spatial controls">

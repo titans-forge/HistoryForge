@@ -7,6 +7,8 @@ import {
 } from "react";
 import { select } from "d3-selection";
 import { zoom, zoomIdentity } from "d3-zoom";
+import { canvasResolution } from "../canvasSizing.js";
+import "../tapestryCanvas.css";
 
 function curve(e) {
   const { from: a, to: b, bend } = e;
@@ -72,9 +74,9 @@ const TapestryCanvas = forwardRef(function TapestryCanvas(
       activeEdge: edgeId,
       size: v,
     } = current.current;
-    const ctx = c.getContext("2d"),
-      dpr = Math.min(window.devicePixelRatio || 1, 2);
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const ctx = c.getContext("2d");
+    if (!ctx || v.width < 1 || v.height < 1) return;
+    ctx.setTransform(c.width / v.width, 0, 0, c.height / v.height, 0, 0);
     ctx.clearRect(0, 0, v.width, v.height);
     const t = camera.current;
     const adjacent = new Set(
@@ -259,12 +261,14 @@ const TapestryCanvas = forwardRef(function TapestryCanvas(
     },
   }));
   useEffect(() => {
-    const obs = new ResizeObserver(([entry]) =>
-      setSize({
-        width: entry.contentRect.width,
-        height: entry.contentRect.height,
-      }),
-    );
+    const obs = new ResizeObserver(([entry]) => {
+      const { width, height } = entry.contentRect;
+      if (![width, height].every(Number.isFinite)) return;
+      setSize((previous) =>
+        previous.width === width && previous.height === height
+          ? previous : { width, height },
+      );
+    });
     obs.observe(holder.current);
     return () => obs.disconnect();
   }, []);
@@ -298,9 +302,9 @@ const TapestryCanvas = forwardRef(function TapestryCanvas(
   }, [revision, cameraKey]);
   const initialized = useRef(false);
   useEffect(() => {
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    canvas.current.width = Math.round(size.width * dpr);
-    canvas.current.height = Math.round(size.height * dpr);
+    const resolution = canvasResolution(size.width, size.height, window.devicePixelRatio);
+    canvas.current.width = resolution.width;
+    canvas.current.height = resolution.height;
     if (size.width > 1 && size.height > 1) {
       if (!initialized.current) {
         fit();

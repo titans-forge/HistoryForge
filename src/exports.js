@@ -1,22 +1,25 @@
 import { bindTapestryEvidence } from "./tapestryFocus.js";
 export function evidenceRecord(edge, corpus) {
   const bound = bindTapestryEvidence(edge, corpus);
+  if (edge.relationship_type !== "listed_signature" &&
+      (!corpus.qualification || !corpus.scope || !corpus.historical_text_rights))
+    throw new Error("This episode is missing its source-specific export qualifications.");
   return {
     schema: "history-forge-public-evidence-v1",
-    scope: "Public signatory pilot; not the full private research corpus.",
+    scope: corpus.scope || "Public signatory pilot; not the full private research corpus.",
     code_license: "Apache-2.0",
     original_data_license: "Apache-2.0",
     historical_text_rights:
-      "Public-domain historical signature text; see source-specific notices.",
+      corpus.historical_text_rights || "Public-domain historical signature text; see source-specific notices.",
     relationship: edge,
     claim: bound.claim,
     evidence: bound.passages,
     identity_evidence: corpus.identity_evidence.filter(
-      (item) => item.person_id === edge.source,
+      (item) => item.person_id === edge.source || item.person_id === edge.target,
     ),
     audit: corpus.audit,
     qualification:
-      "A listed signature is not proof of a personal meeting, co-authorship, or assent to every clause. July 4, 1776 is the Declaration's adoption date, not an assigned individual signing date.",
+      corpus.qualification || "A listed signature is not proof of a personal meeting, co-authorship, or assent to every clause. July 4, 1776 is the Declaration's adoption date, not an assigned individual signing date.",
   };
 }
 export function evidenceMarkdown(record) {
@@ -35,6 +38,10 @@ export function evidenceMarkdown(record) {
     "## Qualification",
     "",
     record.qualification,
+    ...[...new Map(record.evidence.filter(({ source }) => source.reuse_notice).map(({ source }) => [source.id, source.reuse_notice])).values()].flatMap((notice) => [
+      "", "## " + notice.label, "", notice.notice, "", notice.license_url,
+      "Original format: " + notice.original_url, "", notice.full_license,
+    ]),
     ...record.evidence.flatMap(({ passage, source }) => [
       "",
       "## Source",
@@ -61,7 +68,7 @@ export function evidenceMarkdown(record) {
     "",
     ...record.identity_evidence.map(
       (item) =>
-        item.signature +
+        item.statement ? item.label + ": " + item.statement + "\n" + item.citation + "\n" + item.url : item.signature +
         " -> " +
         item.label +
         ": " +
@@ -78,8 +85,9 @@ export function evidenceMarkdown(record) {
     "## Release Scope And Rights",
     "",
     record.scope,
+    record.historical_text_rights,
     "",
-    "Original application code, structured data and annotations: Apache-2.0. Historical text retains its separate public-domain status. No National Archives endorsement is implied.",
+    "Original application code, structured data and annotations: Apache-2.0. Historical text retains its separate public-domain status within the stated rights scope and any source-specific reuse terms. No source provider endorsement is implied.",
     "",
   ].join("\n");
 }

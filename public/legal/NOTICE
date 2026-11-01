@@ -1,9 +1,17 @@
 History Forge Public Edition
 Copyright 2026 Titans Forge LLC
 
-Original application code, structured data and annotations are licensed under
-the Apache License, Version 2.0. This license does not relicense historical
-source text or third-party software. See THIRD_PARTY_NOTICES.md and licenses/.
+Original application code and the Forge-owned structured data and annotations
+already released in this public preview are licensed under the Apache License,
+Version 2.0. That existing grant is preserved.
+
+Future original editorial data may be designated prospectively under the
+History Forge Data License 1.0 only by an explicit Release Notice and component
+rights manifest. Merely including that license in this repository does not
+change the license of existing material. See LICENSING.md.
+
+Neither license relicenses historical source text or third-party software. See
+THIRD_PARTY_NOTICES.md and licenses/.
 
 Historical signature transcriptions are credited to the U.S. National Archives
 and Records Administration. No endorsement by NARA or the U.S. Government is

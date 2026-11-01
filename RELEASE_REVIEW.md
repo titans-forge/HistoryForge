@@ -1,5 +1,22 @@
 # Release Review
 
+## Layered Licensing Update
+
+The application and the Forge-owned data and annotations already released in
+this preview remain Apache-2.0. History Forge Data License 1.0 is now published
+for future rights-controlled editorial data, but it applies only when a specific
+Release Notice and component manifest designate new Covered Material. No current
+preview file is retroactively restricted. Commercial agent training on future
+designated material is available only through a separate written agreement.
+
+This documentation change does not add historical claims, identities or source
+text. The source-specific notices and all earlier public grants remain intact.
+All 24 Node tests, the production build and the 20-case desktop/phone browser
+matrix passed on 31 October 2026 using the installed Google Chrome binary. The
+first browser invocation did not run because Playwright's managed Chromium was
+not installed; the unchanged matrix then passed with the repository's supported
+`HISTORY_FORGE_BROWSER` override.
+
 ## Roman Expansion Candidate
 
 Separate independent textual and rights/identity reviewers accepted all five

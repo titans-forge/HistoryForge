@@ -193,8 +193,11 @@ function Release() {
         source manifest.
       </p>
       <p>
-        Original application code, structured data and annotations are licensed
-        under Apache-2.0. Historical signature text is public domain. The
+        Original application code and the Forge-owned data already released in
+        this preview are licensed under Apache-2.0. Future designated editorial
+        data may use the History Forge Data License 1.0; commercial agent
+        training on that material requires a separate agreement. Historical
+        signature text is public domain. The
         MacDevitt translation (Everyman no. 702, edition first published 1915,
         reprinted 1923 and 1929) is listed as public domain in the USA; its
         Project Gutenberg reuse notice and full terms accompany displayed and
@@ -218,7 +221,9 @@ function Release() {
         requests; shared URLs may include your selection.
       </p>
       <p>
-        <a href={base + "legal/LICENSE"}>Apache-2.0 license</a> /{" "}
+          <a href={base + "legal/LICENSE"}>Apache-2.0 license</a> /{" "}
+          <a href={base + "legal/HISTORY_FORGE_DATA_LICENSE.md"}>Data license</a> /{" "}
+          <a href={base + "legal/LICENSING.md"}>License scope</a> /{" "}
         <a href={base + "legal/NOTICE"}>Notices</a> /{" "}
         <a href={base + "legal/dependencies.txt"}>Dependency licenses</a>
       </p>

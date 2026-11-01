@@ -63,7 +63,20 @@ No Python web service, API key, account, model call or database is required. Thr
 
 ## Evidence And Rights
 
-Original code, structured data and annotations: **Apache-2.0**. Historical signature text: separate public-domain status. The old MacDevitt Caesar translation is catalogued as public domain in the USA, not asserted to be cleared worldwide. Its Project Gutenberg notice and full terms accompany displayed and exported excerpts. Dependencies retain their own licenses. See [LICENSE](LICENSE), [NOTICE](NOTICE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+The application remains **Apache-2.0**, and the Forge-owned structured data and
+annotations already released in this public preview keep their existing Apache
+grant. Future rights-controlled editorial data may be designated under the
+[History Forge Data License 1.0](HISTORY_FORGE_DATA_LICENSE.md); commercial agent
+training on that designated material requires separate written permission. The
+new data license does not retroactively narrow this preview or relicense facts,
+public-domain material or third-party works. See the plain-language
+[licensing map](LICENSING.md) and [commercial licensing page](COMMERCIAL_AGENT_TRAINING.md).
+
+Historical signature text has separate public-domain status. The old MacDevitt
+Caesar translation is catalogued as public domain in the USA, not asserted to be
+cleared worldwide. Its Project Gutenberg notice and full terms accompany
+displayed and exported excerpts. Dependencies retain their own licenses. See
+[LICENSE](LICENSE), [NOTICE](NOTICE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 `public/data/source-inputs.json` records exact signature blocks, explicit identity mappings, source URLs and capture hashes. `roman-inputs.json` preserves the bounded Roman source pack. `scripts/build_collection.py` regenerates the graph and three corpus payloads without network access. Corpus hashes use canonical JSON excluding `audit`; graph revision excludes `revision`.
 
